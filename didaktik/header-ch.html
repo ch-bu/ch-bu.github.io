@@ -1,0 +1,34 @@
+<div class="row title-picture">
+  <ul class="topnav" id="myTopnav" style="
+    position: absolute;
+    /* left: 0; */
+    top: 248px;
+    background-color: rgba(127, 127, 127, 0.7);
+    ">
+  <li><a class="active" href="index.html">Startseite</a></li>
+  <li><a href="#lern">Lernumgebung</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Herausforderungen</a>
+    <div class="dropdown-content">
+      <a id="dropdown-content" href="motivation.html">Motivation</a>
+      <a id="dropdown-content" href="#">Aufmerksamkeit</a>
+      <a id="dropdown-content" href="#">Komplexität</a>
+    </div>
+  </li>
+  <li style="float:right"><a href="#contact">Kontakt</a></li>
+  <li style="float:right"><a style="float:right" href="#impressum">Impressum</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+  </ul>
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
+</div>

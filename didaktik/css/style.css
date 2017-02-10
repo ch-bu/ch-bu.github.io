@@ -1,0 +1,213 @@
+
+/* General */
+body {
+  font-family: 'Lato', sans-serif;
+  color: #747704 ;
+  font-weight: 300;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+/* Text-Style */
+.text-muted {
+  color: #BCBBBB;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+
+/* Welcome-Title-Style */
+.title-super {
+  font-size: 40px;
+}
+
+.title {
+  display: block;
+  padding: 15px 20px;
+  color: #F1ECEC;
+  text-align: center;
+  background-color: green;
+  font-style: "verdana"
+}
+
+.title-logo {
+  margin: 20px;
+}
+
+/* Title-Picture */
+.title-picture {
+    /* The image used */
+    background-image: url('/img/img_parallax.jpg');
+
+    /* Full height */
+    height: 300px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Dropdown Navbar */
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #7f7f7f;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a, .dropbtn {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+ul.topnav li a:hover, .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #cccccc;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+a#dropdown-content {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Accordion */
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Footer */
+.footer {
+	display: block;
+	padding: 15px 20px;
+	font-weight: 700;
+	color: #fff;
+	background-color: #7f7f7f;
+}
+
+/* IDs */
+#padding1 {
+  padding: 30px;
+}
+
+#big-background-image {
+  background-image:url("https://github.com/dk248/Didaktik/blob/master/website/img/1.jpg_500px.jpg?raw=true");
+  height: 500px;
+  width: 500px;
+}
+
+#slim-background-image1 {
+  background-image: url("http://placehold.it/166x500");
+  height: 500px;
+  width: 166px;
+}
+
+#slim-background-image2 {
+  background-image: url("http://placehold.it/166x500");
+  height: 500px;
+  width: 166px;
+}
+
+#slim-background-image3 {
+  background-image: url("http://placehold.it/166x500");
+  height: 500px;
+  width: 166px;
+}
+
+#contact-bg-img {
+  background-image: url(http://placehold.it/1000x300);
+  height: 300px;
+  width: 1000px;
+}

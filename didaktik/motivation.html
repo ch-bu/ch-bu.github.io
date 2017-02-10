@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Motivation - Didaktik in Tutorien</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+  
+    <!-- Js-Datei um Html Dateien einzubinden -->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+    <!-- Christian: Verlinkung richtig. Gute Arbeit" -->
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <div class="container">
+      <div w3-include-html="header-ch.html"></div> 
+
+      <div class="row">
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+      </div>
+
+    <!-- Füge Footer ein -->
+    <!-- http://www.w3schools.com/howto/howto_html_include.asp -->
+    <div w3-include-html="../footer.html"></div> 
+
+    <!-- Ihr hattet vergessen, die Div-Box zu schließen -->
+    </div>
+
+    <!-- Sehr gut wie ihr Bootstrap hier eingebundet habt.
+    Ich habe eure JavascriptDatei an das Ende eingefügt, da Javascript 
+    Block-Rendering sind, das heißt die Seite läd nicht weiter bis die ganze
+    Javascriptdatei heruntergeladen wurde. In der Regel stehen Javascriptdateien
+    daher vor dem Ende des body-Tags-->
+    <script type="text/javascript" src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  
+    <!-- Damit der Footer eingefügt werden kann, muss das Skript aktiviert werden -->
+    <script>
+      w3IncludeHTML();
+    </script>
+  </body>
+</html>

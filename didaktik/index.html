@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Didaktik in Tutorien</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+
+    <!-- Js-Datei um Html Dateien einzubinden -->
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+
+    <!-- Christian: Verlinkung richtig. Gute Arbeit" -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center text-uppercase">
+          <h1 class="title title-super no-margin">Willkommen bei Didaktik für Tutorien</h1> <!-- Welcome-Header erscheint nur auf der Startseite oberhalb des Menüs -->
+        </div>
+      </div>
+      <!-- Include menü -->
+      <div w3-include-html="header.html"></div>
+
+      <div class="row">
+        <div class="col-xl-6 col-md-6 col-sm-12 col-xs-12">
+          <section id="big-background-image" class="img-responsive" alt="Big Image">
+            <h1 class="no-margin" id="padding1">Lernumgebung</h1>
+            <h2 id="padding1">Diese Lernumgebung vermittelt die Grundlagen der Didaktik in Tutorien</h2>
+          </section>
+        </div>
+        <div class="col-xl-2 col-md-2 col-sm-4 col-xs-12">
+          <section id="slim-background-image1" class="img-responsive" alt="Slim Image">
+            <p>Herausforderung #1</p>
+            <p>Motivation</p>
+          </section>
+        </div>
+        <div class="col-xl-2 col-md-2 col-sm-4 col-xs-12">
+          <section id="slim-background-image2" class="img-responsive" alt="Slim Image">
+            <p>Herausforderung #2</p>
+            <p>Aufmerksamkeit</p>
+          </section>
+        </div>
+        <div class="col-xl-2 col-md-2 col-sm-4 col-xs-12">
+          <section id="slim-background-image3" class="img-responsive" alt="Slim Image">
+            <p>Herausforderung #3</p>
+            <p>Komplexität<p>
+          </section>
+        </div>
+      </div>
+
+    <!-- Füge Footer ein -->
+    <!-- http://www.w3schools.com/howto/howto_html_include.asp -->
+    <div w3-include-html="footer.html"></div>
+
+    <!-- Container war nicht geschlossen -->
+    </div>
+    <!-- Sehr gut wie ihr Bootstrap hier eingebundet habt.
+    Ich habe eure JavascriptDatei an das Ende eingefügt, da Javascript
+    Block-Rendering sind, das heißt die Seite läd nicht weiter bis die ganze
+    Javascriptdatei heruntergeladen wurde. In der Regel stehen Javascriptdateien
+    daher vor dem Ende des body-Tags-->
+    <script type="text/javascript" src="js/vendor/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery-migrate-1.4.1.min.js"></script>
+    <script type="text/javascript" src="js/vendor/bootstrap.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <!-- Damit der Footer eingefügt werden kann, muss das Skript aktiviert werden -->
+    <script>
+      w3IncludeHTML();
+    </script>
+
+  </body>
+</html>
