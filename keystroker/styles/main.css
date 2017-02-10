@@ -1,0 +1,2 @@
+body,html{font-family:Crimson Text,serif}.container #data-display{height:55vh}.container #data-input{height:40vh}.container #data-input #inputTextarea{height:90%;outline:none;background-color:#fafafa;border-radius:10px;border:0;font-size:2em;padding:15px}.container #data-input #inputTextarea:active{box-shadow:none}@media screen and (max-width:800px){.container #data-input #inputTextarea{font-size:1.3em}}@media screen and (max-width:1200px){.container #data-input #inputTextarea{font-size:1.7em}}
+/*# sourceMappingURL=main.css.map */
