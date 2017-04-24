@@ -1,0 +1,108 @@
+.reveal h1, .reveal h2, .reveal h3 {
+	text-align: left;
+	font-family: 'Comfortaa', cursive;
+/*	  font-family: 'Montserrat', sans-serif;
+	  font-weight: 900;
+	  text-transform: uppercase;*/
+}
+
+body, p, .reveal p {
+	font-family: 'Roboto', sans-serif;
+}
+
+h2.highlight-heading, h3.highlight-heading, h1.highlight-heading {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color:rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	color: #fff;
+}
+
+span.credit {
+	position: fixed;
+	bottom: 20px;
+	right: 5vw;
+	color: #ccc;
+	font-size: 0.4em;
+}
+
+span.credit a {
+	color: #ccc;
+}
+
+span.credit a:hover {
+	color: #ccc;
+}
+
+#cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+
+.card {
+	cursor: pointer;
+	padding: 80px;
+	width: 15%;
+	height: 15%;
+	margin: 0;
+	transition: all .2s ease-in-out;
+}
+
+.card p {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	font-size: 0.7em;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+.reveal section  img {
+	border: none;
+	background: none;
+	box-shadow: none;
+}
+
+.card p:before, .card p:after {
+	content: '"';
+}
+
+.card:hover {
+	transform: scale(1.1);
+}
+
+.about-seminar p {
+	text-align: left;
+}
+.about-seminar a {
+	color: #000;
+}
+
+.about-seminar a:hover {
+	color: #000;
+	background: #fbf3f3;
+	border-radius: 2px;
+}
+
+
+.erwartungen {
+	padding: 10px;
+	margin-right: 10px;
+	width: 16%;
+	height: 30vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	opacity: 0.6;
+	color: #fff;
+	line-height: 50vh;
+	vertical-align: middle;
+	border-radius: 8px;
+}
+
+#regeln {
+	text-align: left;
+}
