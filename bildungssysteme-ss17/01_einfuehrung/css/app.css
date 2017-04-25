@@ -1,0 +1,138 @@
+.reveal h1, .reveal h2, .reveal h3 {
+	text-align: left;
+	font-family: 'Comfortaa', cursive;
+
+}
+
+
+body, p, .reveal p {
+	font-family: 'Roboto', sans-serif;
+}
+
+h2.highlight-heading, h3.highlight-heading, h1.highlight-heading {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color:rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	color: #fff;
+}
+
+span.credit {
+	position: fixed;
+	bottom: 20px;
+	right: 5vw;
+	color: #ccc;
+	font-size: 0.4em;
+}
+
+span.credit a {
+	color: #ccc;
+}
+
+span.credit a:hover {
+	color: #ccc;
+}
+
+#our-education h2 {
+	color: #fff;
+}
+
+#seminar-flex, #cards {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#seminar-flex div {
+	width: 25%;
+	height: 30vh;
+	background-color: #ccc;
+	transition: all .2s ease-in-out;
+}
+
+#seminar-flex div:hover {
+	transform: scale(1.1);
+}
+
+#reading {
+	background-image: url("../img/reading.gif");
+	background-size: auto 100%;
+}
+
+#seminargestaltung {
+	background-image: url("../img/countries.jpg");
+	background-size: 100% 120%;
+}
+
+#hausarbeit {
+	background-image: url("../img/writing.gif");
+	background-size: auto 100%;
+}
+
+#anwesenheit {
+	background-image: url("../img/anwesenheit.gif");
+	background-size: 100% 120%;
+}
+
+.card {
+	cursor: pointer;
+	padding: 20px;
+	width: 25%;
+	margin: 0;
+	height: 80vh;
+	background-color: #C63D0F;
+	transition: all .2s ease-in-out;
+}
+
+.card p {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	font-size: 0.7em;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+.card p:before, .card p:after {
+	content: '"';
+}
+
+.card:hover {
+	background-color: #000;
+	transform: scale(1.1);
+	color: #fff;
+}
+
+.about-seminar p {
+	text-align: left;
+}
+.about-seminar a {
+	color: #fff;
+	background: #3d0fc6;
+}
+
+.about-seminar a:hover {
+	color: #fff;
+/*	background: #3d0fc6;
+	border-radius: 2px;*/
+}
+
+#seminar {
+	text-align: left;
+}
+
+#seminar p {
+	font-size: 1.4em;
+}
+
+#countries {
+	text-align: left;
+}
+
+#countries span {
+/*	font-size:/**/ 1.4em;*/
+	/*color: #3d0fc6;*/
+}
