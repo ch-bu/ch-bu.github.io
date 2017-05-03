@@ -1,0 +1,15 @@
+body {
+}
+
+img {
+	height: 300px;
+	width: 200px;
+	background-size: cover;
+	cursor: pointer;
+	padding: 10px;
+}
+
+section {
+	padding-bottom: 50px;
+}
+
