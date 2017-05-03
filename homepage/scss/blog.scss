@@ -1,0 +1,37 @@
+
+
+#blog-information, #blog-single {
+  @include page-info-header();
+}
+
+#blog-container {
+  margin-top: 8vh;
+  @include blog-mixin();
+}
+
+#blog-single {
+
+  h2 {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  p {
+
+    text-align: left;
+    font-size: 1.5em;
+  }
+
+  #blog-content {
+    margin-top: 4vh;
+
+    p {
+      text-align: left;
+      font-size: 1.6em;
+    }
+
+    a {
+      @include anchor-after();
+    }
+  }
+}
