@@ -1,0 +1,93 @@
+/**
+ * Projects
+ */
+
+#projects-information {
+  @include my-section();
+}
+
+#projects {
+  margin-top: 4vh;
+  @include projects-mixin();
+}
+
+/**
+ * Single project
+ */
+
+#project-single {
+  position: relative;
+  font-size: 1.2rem;
+
+  #display {
+    text-align: center;
+    @include my-section();
+  }
+
+  #information {
+    margin-top: 5vh;
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #939393;
+      margin-bottom: 0;
+    }
+
+    .small-p {
+      color: #545454;
+
+      span {
+        display: block;
+      }
+    }
+
+    #meta {
+      #date {
+        margin-bottom: 3vh;
+      }
+
+      #links {
+        margin-top: 3vh;
+
+        a {
+          display: block;
+          cursor: pointer;
+          font-size: 1.5em;
+          color: #939393;
+          padding: 4px;
+          margin-right: 10px;
+          border-radius: 4px;
+          text-decoration: none;
+
+          &:hover {
+            background: #fcefee;
+          }
+
+          @include anchor-after();
+        }
+      }
+    }
+  }
+
+  #content {
+    margin-top: 8vh;
+    text-align: left;
+    margin-bottom: 10vh;
+    font-size: 0.9em;
+
+    h1, h2, h3 {
+      text-align: left;
+    }
+
+    p {
+      line-height: 1.4;
+    }
+  }
+}
