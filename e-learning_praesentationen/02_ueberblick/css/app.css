@@ -1,0 +1,61 @@
+.reveal h1, .reveal h2, .reveal h3 {
+	text-align: left;
+	font-family: 'Comfortaa', cursive;
+}
+
+body, p, .reveal p {
+	font-family: 'Roboto', sans-serif;
+}
+
+h2.highlight-heading, h3.highlight-heading, h1.highlight-heading {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color:rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	color: #fff;
+}
+
+span.credit {
+	position: fixed;
+	bottom: 20px;
+	right: 5vw;
+	color: #ccc;
+	font-size: 0.4em;
+}
+
+p {
+	text-align: left;
+}
+span.credit a {
+	color: #ccc;
+}
+
+span.credit a:hover {
+	color: #ccc;
+}
+
+#whatis h1, #whatis h2, #whatis h3 {
+	color: #fff;
+}
+
+#whatis p {
+	color: #fff;
+}
+
+#whatis a, #job a, #user a {
+	color: #f0d3e1;
+}
+
+#whatis a:after, #job a:after, #user a:after {
+  position: relative;
+  content: "﻿°";
+  margin-left: 0.1em;
+  top: -0.1em;
+  color: #f0d3e1;
+}
+
+#whatis p, #job p, #user p {
+	text-align: left;
+}
