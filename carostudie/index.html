@@ -14,60 +14,132 @@
 
 <section id="welcome" class="container">
 	<h1>Herzlich Willkommen</h1>
+	<p>Liebe*r Studienteilnehmer*in,<br>
+	danke, dass Sie an meiner Studie teilnehmen.Im Rahmen meiner Masterarbeit möchte ich untersuchen, wie Sie über Lernen denken. Im Folgenden bitte ich Sie drei Fragen zu Ihrer Person zu beantworten. Daran anschließend werden Ihnen 10 Zeichnungen präsentiert, die zeigen, was verschiedene Personen über Lernen denken. Bitte bringen Sie die Zeichnungen in Ihre persönliche Rangfolge, um zu zeigen, welche Zeichnung am meisten das widerspiegelt, was Sie unter Lernen verstehen.</p>
+
 </section>
 
 <section id="gender" class="container">
 
-	<h2>Welches Geschlecht haben Sie?</h2>
+	<h2>Ihr Geschlecht?</h2>
 	
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="male" checked>
+	    <input class="form-check-gender" type="radio" name="gender" id="gender-male" value="male">
 	    Männlich
 	  </label>
 	</div>
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="female">
+	    <input class="form-check-gender" type="radio" name="gender" id="gender-female" value="female">
 	    Weiblich
 	  </label>
 	</div>
 </section>
 
-<section id="studiengang" class="container">
-	<h2>Was ist ihr höchster Schulabschluss?</h2>
+<section id="job" class="container">
+	<h2>Berufliche Situation?</h2>
 	
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="male" checked>
-	    Realschule
+	    <input class="form-check-educationed-level" type="radio" name="job" id="job-school-student" value="school-student">
+	    Schüler
 	  </label>
 	</div>
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="female">
-	    Grundschule
+	    <input class="form-check-education" type="radio" name="job" id="job-university-student" value="university-student">
+	    Student
+	  </label>
+	</div>
+	<div class="form-check">
+	  <label class="form-check-label">
+	    <input class="form-check-education" type="radio" name="job" id="job-employed" value="employed">
+	    Berufstätig – angestellt
+	  </label>
+	</div>
+	<div class="form-check">
+	  <label class="form-check-label">
+	    <input class="form-check-education" type="radio" name="job" id="job-independent" value="independent">
+	    Berufstätig – selbstständig
 	  </label>
 	</div>
 </section>
+
+<section id="ed-level" class="container">
+	<h2>Welchen höchsten Bildungsabschluss haben Sie?</h2>
+	
+	<div class="form-check">
+	  <label class="form-check-label">
+	    <input class="form-check-ed-level" type="radio" name="ed-level" id="school" value="school">
+	    Noch keinen, ich bin noch auf der Schule
+	  </label>
+	</div>
+	<div class="form-check">
+	  <label class="form-check-label">
+	    <input class="form-check-ed-level" type="radio" name="ed-level" id="ed-hauptschule" value="hauptschule">
+	    Haupt-/ Volksschulabschluss
+	  </label>
+	</div>
+	<div class="form-check">
+	  <label class="form-check-labed">
+	    <input class="form-check-ed-level" type="radio" name="ed-level" id="ed-mittlere-reife" value="mittlere-reife">
+	    Mittlere Reife
+	  </label>
+	</div>
+	<div class="form-check">
+	  <label class="form-check-label">
+	    <input class="form-check-ed-level" type="radio" name="ed-level" id="ed-fachhochschulreife" value="fachhochschulreife">
+	    Fachhochschulreife
+	  </label>
+	</div>
+	<div class="form-check">
+	  <label class="form-check-label">
+	    <input class="form-check-ed-level" type="radio" name="ed-level" id="ed-abitur" value="abitur">
+	    Abitur
+	  </label>
+	</div>
+	<div class="form-check">
+	  <label class="form-check-label">
+	    <input class="form-check-ed-level" type="radio" name="ed-level" id="ed-hochschule" value="hochschule">
+	    Hochschule / Universität
+	  </label>
+	</div>
+</section>
+
 
 <section id="dragdrop" class="container">
 	<h2>Ordnen Sie bitte folgende Bilder Ihrer Reihenfolge an</h2>
 	<div class="row" id="dragable">
 		<div class="col-xs-2">
-			<img src="img/1.jpg" alt="">
+			<img src="img/alter.jpg" alt="" id="alter">
 		</div>
 		<div class="col-xs-2">
-			<img src="img/2.jpg" alt="">
+			<img src="img/baum.jpg" alt="" id="baum">
 		</div>
 		<div class="col-xs-2">
-			<img src="img/3.jpg" alt="">
+			<img src="img/berg.jpg" alt="" id="berg">
 		</div>
 		<div class="col-xs-2">
-			<img src="img/4.jpg" alt="">
+			<img src="img/blumenstand.jpg" alt="" id="blumenstand">
 		</div>
 		<div class="col-xs-2">
-			<img src="img/5.jpg" alt="">
+			<img src="img/flasche.jpg" alt="" id="flasche">
+		</div>
+		<div class="col-xs-2">
+			<img src="img/hausbauen.jpg" alt="" id="hausbauen">
+		</div>
+		<div class="col-xs-2">
+			<img src="img/kraftraining.jpg" alt="" id="krafttraining">
+		</div>
+		<div class="col-xs-2">
+			<img src="img/mine.jpg" alt="" id="mine">
+		</div>
+		<div class="col-xs-2">
+			<img src="img/natur.jpg" alt="" id="natur">
+		</div>
+		<div class="col-xs-2">
+			<img src="img/wasser.jpg" alt="" id="wasser">
 		</div>
 	</div>
 <!-- 		<div class="col-xs-6">
@@ -75,7 +147,7 @@
 		</div> -->
 </section>
 
-<section id="button" class="container">
+<section id="button" class="container " onclick="return confirm('Are you sure?')">
 </section>
 
 <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
