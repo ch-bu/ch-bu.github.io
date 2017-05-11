@@ -1,7 +1,7 @@
 // Enable dragging
 dragula([document.getElementById('dragable')]);
 
-//http://jsbin.com/oyaxa/403/edit?html,js,output
+// http://jsbin.com/oyaxa/403/edit?html,js,output
 (function($) {
   
   $.fn.randomize = function(tree, childElem) {
@@ -30,7 +30,13 @@ a.textContent = "Download backup.json";
 document.getElementById('button').appendChild(a);
 
 
-// Click
+// Init local storage
+if (localStorage.getItem('results') === null) {
+  localStorage.setItem('results', '[]');
+}   
+
+
+// User clicks image
 $('a').click(function() {
     // Get data from forms and divs
     var gender = $('.form-check-gender:checked').val();
@@ -49,14 +55,15 @@ $('a').click(function() {
     // Init data
     var results = localStorage.getItem('results');
     var oldStorage = JSON.parse(results);
-    var res = {'gender': 'male', 'job': job, 'edLevel': edLevel, 
+    var res = {'gender': gender, 'job': job, 'edLevel': edLevel, 
                'date': Date(), 'images': images};
+    console.log(res);
     oldStorage.push(res);
 
     // Update local storage
     localStorage.setItem('results', JSON.stringify(oldStorage));
 
-    // Save blob
+    // Save va
     var blob = new Blob([localStorage.results], {type: "application/json"});
     var url  = URL.createObjectURL(blob);
     a.href = url;
@@ -64,4 +71,33 @@ $('a').click(function() {
     // Randomize images
     $("#dragdrop").randomize("#dragable", "div");
 });
+
+// Closure for the drag drop number functionality
+function higlightOverlay() {
+  $('#dragable').find('img').each(function(index, el){
+      var parent = $(el).parent();
+      var overlay = parent.find('.overlay');
+      var textDiv = parent.find('.text');
+
+      textDiv.text(index + 1);
+
+      overlay.css('opacity', '0.8');
+      
+      setTimeout(function(){ 
+        overlay.css('opacity', '0');
+      }, 3000);
+  });
+}
+
+// Show overlay when user changes the image
+$('.image-container').mousedown(function() {
+    higlightOverlay();
+});
+
+// Show overlay when user changes the image
+$('.image-container').touchstart(function() {
+    higlightOverlay();
+});
+
+
 

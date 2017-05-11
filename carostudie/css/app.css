@@ -3,7 +3,7 @@ body {
 
 img {
 	height: 300px;
-	width: 200px;
+	width: 100%;
 	background-size: cover;
 	cursor: pointer;
 	box-sizing: border-box;
@@ -13,3 +13,36 @@ section {
 	padding-bottom: 50px;
 }
 
+
+.image-container {
+  position: relative;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+/*  background-color: #008CBA;*/
+  box-sizing: border-box;
+  margin: 1px;
+}
+
+
+.text {
+  color: #ccc;
+  font-size: 20px;
+  position: absolute;
+  top: -10px;
+  font-size: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
