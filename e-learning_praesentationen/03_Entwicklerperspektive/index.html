@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- Landing page -->
+				<section data-transition="slide" data-background="#220000" >
+					<h1>Grundlagen des E-Learning</h1>
+					<h2>Entwicklerperspektive</h2>
+				</section>
+
+				<section data-transition="slide">
+					<h1>Prüfungsanmeldung. 17.05 - 21.05</h1>
+				</section>
+
+				<section data-transition="convex" data-background="#6600ff">
+					<h1>Das E-Learning Vokabular</h1>
+					<p class="fragment">Ihr erhaltet gleich von mir eine Liste mit verschiedenen Fragen und Begriffen. Euer Ziel ist es, euren Kommilitonen <span style="font-size: bold">alle</span> Fragen zu erklären. Steht dazu auf und sucht euch Kommilitonen im Raum. Erklärt euch wechselseitig jeweils eine Frage. Geht danach weiter zur nächsten Person. </p>
+				</section>
+
+				<section data-transition="slide" data-background="#e600ff">
+
+					<section data-background-image="img/standards.jpg">
+						<h1>Standards</h1>
+
+						<span class="credit" >
+							<a style="color: #ccc" href="http://www.freepik.com/free-photo/gray-connect-flash-end-transfer_1018876.htm">Designed by Freepik</a>
+						</span>
+							<aside class="notes">
+								Standards kennt jeder. Ein USB-Kabel funktioniert an jedem Laptop, da sich die Hersteller an die Regeln halten. Nicht anders ist es bei E-Learning Produkten. Als es nur Stift und Papier gab, war das kein Problem. Portabilität ging ohne Probleme. Auch beim Tageslichtprojektor. Mit der Technologisierung hat sich das allerdings geändert.
+							</aside>
+					</section>
+
+					<section>
+						<h2>SCORM (Sharable Content Object Reference Model)</h2>
+						<p class="fragment">SCORM tells programmers how to write their code so that it can “play well” with other e-learning software. It is the de facto industry standard for e-learning interoperability.</p>
+						<p class="fragment">Verwaltet wird SCORM durch <a href="https://www.adlnet.gov/" style="color: #fff; padding: 5px; background-color: #ff6600; border-radius: 10px">ADL (Advanced Distributed Learning)</a></p>
+						<p class="fragment">SCORM besteht aus <a href="https://www.adlnet.gov/adl-research/scorm/"  style="color: #fff; padding: 5px; background-color: #ff6600; border-radius: 10px">4 Büchern</a>.</p>
+						<span class="credit" >
+							<a style="color: #ccc" href="http://scorm.com/scorm-explained/">What is SCORM?</a>
+						</span>
+
+						<aside class="notes">
+							SCORM ist der bekannteste Standard im E-Learning. Es ist aber nicht der einzige. Schlussendlich ermöglicht SCORM die Portabilität von E-Learning Modulen zwischen verschiedenen LMS. Nicht alle Anbieter benutzen allerdings SCORM. Z.B. Udacity, edx.
+						</aside>
+					</section>
+
+					<section data-background-image="img/mobile.jpg">
+						<h2 style="background-color: #000; padding: 30px; opacity: 0.8; color: #fff; border-radius: 10px">Lernen findet nicht mehr nur an einem Gerät statt</h2>
+						<span class="credit" >
+							<a href="http://www.freepik.com/free-photo/hand-touching-a-mobile-screen-with-city-background_973435.htm">Designed by Freepik</a>
+						</span>
+					</section>
+
+					<section>
+						<h2>Tin Can API / Experience API / x-API</h2>
+						<p class="fragment">Lernen findet überall statt. Die Standards sollten dieser Tatsache gerecht werden.</p>
+						<p class="fragment">xAPI speichert Lernverhalten anhand von Statements: "Hannes las Kapitel 2 aus Buch X".</a></p>
+						<p class="fragment">Es ist nichts anderes als ein Web API</p>
+						
+						<span class="credit" >
+							<a href="http://hackeducation.com/2012/11/19/tin-can-api">Tin Can API</a>, <a href="http://tincanapi.com/">tincanapi.com</a>
+						</span>
+
+					</section>
+
+					<section>
+						<h2>Was x-APi speichern kann</h2>
+						<ul style="text-align: left">
+							<li>Training data from a simulation</li>
+							<li>Watching a training video, stopping and starting it</li>
+							<li>Reading an article or interacting with an eBook</li>
+							<li>Physiological measures, such as heart-rate data</li>
+							<li>Quiz scores and answer history by question</li>
+						</ul>
+
+						<span class="credit" >
+							<a href="http://www.adlnet.gov/adl-research/performance-tracking-analysis/experience-api/">xAPI</a>
+						</span>
+					</section>
+				
+				</section>
+
+				<section data-transition="convex" data-background="#140033">
+					<section>
+						<h1>Euer E-Learning Modul</h1>
+						<p class="fragment">In dieser Aufgabe macht ihr euch erste Gedanken zu eurem E-Learning Modul. Am Ende der Aufgabe solltet Ihr eine erste Fassung eures Moduls auf Papier aufgezeichnet haben.</p>
+						<p class="fragment">Überlegt euch zunächst <span style="padding: 5px; background-color: #ff6600; border-radius: 10px">einzeln</span>, was <span style="padding: 5px; background-color: #ff6600; border-radius: 10px">der Inhalt</span> und <span style="padding: 5px; background-color: #ff6600; border-radius: 10px">das Ziel</span> eurer Lernumgebung ist (ihr könnt es noch ändern, ihr könnt auch mehrere Ideen sammeln). Schreibt eure Ideen auf (15 Minuten). </p>
+						<p class="fragment">Tauscht euch in der <span style="padding: 5px; background-color: #ff6600; border-radius: 10px">Dreiergruppe</span> zu euren Ideen aus. Fragt euch als Gruppe: Ist das Modul realisierbar? Ist das Ziel erreichbar? Habt ihr erste Ideen, wie das Modul aussehen könnte? (25 Minuten)</p>
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				width: "60%",
+				height: "100%",
+				controls: true,
+				//slideNumber: 'c/t',
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
