@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script src="js/d3.min.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+<!-- Landing page -->
+				<section data-transition="convex" >
+					<h1>Bildungssysteme im internationalen Vergleich</h1>
+					<h2>Deutschland</h2>
+				</section>
+
+				<section data-transition="convex" data-background="#6600ff">
+					<h1>Aktivierung</h1>
+					<p>Geht auf den Plan für das Seminar und füllt dort den Fragebogen aus.</p>
+				</section>
+
+				<section data-transition="convex" data-background="#6600ff">
+
+					<section>
+						<h1>Aufbau des Bildungssystems</h1>
+					</section>
+
+					<section>
+						<img src="img/grundstruktur.png" alt="">
+						<span class="credit">
+							<a href="https://www.kmk.org/fileadmin/Dateien/pdf/Dokumentation/dt-2015.pdf">Grundstruktur des Bildungswesens in der Bundesrepublik Deutschland</a>
+						</span>
+					</section>
+
+					<section>
+						<h2>Hamburger Abkommen 1971</h2>
+						<p class="fragment">&ldquo;Die Vollzeitschulpflicht endet nach neun Schuljahren.&rdquo;</p>
+						<p class="fragment">&ldquo;Die für alle Schüler gemeinsame Unterstufe trägt die Bezeichnung &lsquo;Grundschule&rsquo;&rdquo;</p>
+						<p class="fragment">&ldquo;Für die Zeugnisse aller Schulen werden folgende Noten festgesetzt: sehr gut, gut, befriedigend, ausreichend, mangelhaft, ungenügend.&rdquo;</p>
+						<span class="credit">
+							<a href="http://www.kmk.org/fileadmin/Dateien/veroeffentlichungen_beschluesse/1964/1964_10_28-Hamburger_Abkommen.pdf">Hamburger Abkommen</a>
+						</span>
+					</section>
+						
+
+					<section>
+						<h2>Verantwortlichkeiten</h2>
+
+						<div style="display: flex">
+							<div style="width: 30%">
+								<img style="padding-top: 40px" src="img/germany.png" alt="">
+							</div>
+							<div style="width: 70%"><p>Das Deutsche Bildungssystem ist ein föderales Bildungssystem. Die Kulturhoheit über die Bildung liegt daher bei den Ländern. Sie haben das Recht der Gesetzgebung im Bereich des Bildungswesens.</p>
+						<p>Die Verantwortlichkeiten des Bundes liegen unter anderem in der Hochschulzulassung, außerschulischen berufliche Aus- und Weiterbildungen, sowie der Berufszulassung für Juristen. Sie obliegt dem <a href="https://www.bmbf.de/" class="link">Bundesministerium für Bildung und Forschung</a>.</p></div>
+						</div>
+						
+
+						<span class="credit">
+							<a href="https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/Bildungswesen-dt-pdfs/dossier_de_ebook.pdf">Das Bildungswesen der Bundesrepublick Deutschland (S. 25)</a>
+						</span>
+					</section>
+				</section>
+
+				<!-- PISA -->
+				<section data-transition="convex" data-background="#6600ff">
+
+					<section>
+						<h1 style="text-align: center">PISA Ergebnisse</h1>
+					</section>
+
+					<section>
+						<img src="img/pisa-performance.png" alt="">
+
+						<span class="credit">
+							<a href="http://www.compareyourcountry.org/pisa/country/deu">PISA (2015)</a>
+						</span>
+					</section>
+
+					<section>
+						<p>Deutschland schneidet in den drei Kernbereichen von PISA über dem Durchschnitt ab. Während die Leistung in den Naturwissenschaften sich seit 2006 verschlechterte, verbesserte sich die Leistung in der Lesefähigkeit über die Jahre. Die Leistungen in der Mathematik blieben stabil. <a class="link" href="http://www.oecd.org/pisa/pisa-2015-Germany.pdf">(OECD, 2016)</a></p>
+						<p>Der sozioökoomische Einfluss auf Bildung ist größer als im Durchschnitt der OECD <a class="link" href="http://www.oecd.org/pisa/pisa-2015-Germany.pdf">(OECD, 2016)</a>, <a class="link" href="http://www.compareyourcountry.org/pisa/country/deu">(PISA, 2015)</a></p>
+					</section>
+
+					<section>
+						<h2 style="text-align: center">Zeitliche Entwicklung</h2>
+						<img src="img/average-pisa.png" alt="">
+
+						<span class="credit">
+							<a href="http://www.compareyourcountry.org/pisa/country/deu">OECD (Mai 2017)</a>
+						</span>
+					</section>
+					
+				</section>
+
+				<section data-transition="convex" data-background="#6600ff">
+					<section>
+						<h1>Bildungsausgaben</h1>
+					</section>
+
+					<section>
+						<h2>4,2% des Bruttoinlandsproduktes werden für Bildung ausgegeben</h2>
+						<div style="display: flex">
+							<div style="height: 2.1vh; width: 2.1vh; background-color: #000"></div>
+							<div style="height: 47.9vh; width: 47.9vh; background-color: #ccc"></div>
+						</div>
+
+						<span class="credit">
+							<a href="https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/Bildungswesen-dt-pdfs/dossier_de_ebook.pdf">Sekretariat der Ständigen Konferenz (2015, S. 23)</a>
+						</span>
+
+					</section>
+
+					<section>
+						<h2>Gesamtausgaben für Bildung</h2>
+						<p>Die Ausgaben für Bildung stiegen seit Anfang der 2000er Jahre kontinuierlich. Momentan werden in etwa 175 Milliarden für Bildung ausgegeben <a class="link" href="https://www.wolframalpha.com/input/?i=education+expenditure+germany">(Statistisches Bundesamt, 2016)</a>. Andere Zahlen sprechen von 129 Milliarden <a class="link" href="https://www.destatis.de/DE/PresseService/Presse/Pressemitteilungen/2016/12/PD16_454_217pdf.pdf?__blob=publicationFile">(Statista, Mai 2017)</a></p>
+						<p>Im Vergleich zu Hongkong gibt Deutschland pro Einwohner in etwa 900 Dollar mehr aus <a class="link" href="https://www.wolframalpha.com/input/?i=education+expenditure+germany+%2F+population+germany+vs.+educatoin+expenditure+hongkong+%2F+population+hongkong">(WolframAlpha, Mai 2017)</a></p>
+					</section>
+
+					<section>
+						<h2>Verteilung der Kosten</h2>
+						<p>Die meisten Bildungsausgaben werden von den Ländern getragen. Der Bund trägt weniger als 10 Prozent bei.</p>
+						<p>Im Schulwesen tragen die Kommunen Sachkosten der Schulen und die Kosten für das nicht-lehrende Personal, während die Länder die Personalkosten tragen. 
+						<p>Die Hauptausgaben für Bildung tragen die Kommunen und Länder <a class="link" href="https://ilias.uni-freiburg.de/goto.php?target=file_799160_download&client_id=unifreiburg">(Döbert, 2004)</a>.</p>
+
+						<span class="credit">
+							<a href="https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/Bildungswesen-dt-pdfs/dossier_de_ebook.pdf">KMK (2015)</a>
+						</span>
+					</section>
+				</section>
+
+				<section data-transition="convex" data-background="#6600ff">
+					<section>
+						<h1>Bildungsstand der Gesamtbevölkerung</h1>
+					</section>
+
+					<section>
+						<h2>Trivia</h2>
+						<p class="fragment">Immer mehr Menschen haben eine Fach- oder Hochschulreife <a class="link" href="https://de.statista.com/statistik/daten/studie/197269/umfrage/allgemeiner-bildungsstand-der-bevoelkerung-in-deutschland-nach-dem-alter/">(Statista, Mai 2017)</a>. <a class="link" href="https://de.statista.com/infografik/2686/bevoelkerungsanteil-mit-hochschulabschluss-in-ausgewaehlten-laendern/">Spitzenreiter ist Russland</a></p>
+
+						<p class="fragment">113.000 Menschen haben einen Masterabschluss, 245.000 einen Bachelorabschluss im Jahr 2015 <a class="link" href="https://de.statista.com/statistik/daten/studie/165267/umfrage/hochschulabschluss-bachelor-und-master-seit-2000/">(Statista, Mai 2017)</a>. Das entspricht 70% der Teilnehmer des Woodstock Festivals <a href="https://www.wolframalpha.com/input/?i=358000+people" class="link">(WolframAlpha, Mai 2017)</a></p>
+
+						<p class="fragment">In etwa 28 % der Bevölkerung vefügen über einen Abschluss im Tertiärbereich. Tendenz steigend. 14% unterhalb des Sekundarbereichs II <a class="link" href="https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/Bildungswesen-dt-pdfs/dossier_de_ebook.pdf">(Sekretariat der Ständigen Konferenz, 2015, S. 23)</a></p>
+						
+						<p class="fragment">10,4% der 18 bis 24-jährigen haben keine Berufsausbildung bzw. Hochschulzugangsberechtigung <a class="link" href="https://www.destatis.de/DE/PresseService/Presse/Pressemitteilungen/2014/09/PD14_326_217.html">(Statista, Mai 2017)</a>. Über einen akademischen Abschluss verfügen hingegen 16% der Bevölkerung <a class="link" href="https://www.destatis.de/DE/ZahlenFakten/GesellschaftStaat/BildungForschungKultur/Bildungsstand/Aktuell.html">(Statista, Mai 2017)</a></p>
+					</section>
+				</section>
+
+				<section data-transition="convex" data-background="#6600ff">
+					<section>
+						<h1>Bildungsumfeld und Organisation der Schule</h1>
+					</section>
+
+					<section>
+						<h2>Es gab 2012 15.971 Grundschulen</h2>
+
+						<svg id="grundschulen" width="1200" height="800"></svg>
+						<script>
+							(function() {
+								var svg = d3.select('#grundschulen');
+								var height = svg.attr('height');
+								var width = svg.attr('width');
+
+								
+								// Create random data
+								  var data = [];
+								  for (var i = 0; i < 15971; i++) {
+								    data.push({ 'x': Math.floor(Math.random() * width) + 1,
+								      'y': Math.floor(Math.random() * height) + 1});
+								  }
+
+								  console.log(data);
+
+								  // Append circles to svg with random data
+								  var nodes = svg.selectAll('circle')
+								    .data(data)
+								    .enter().append('circle')
+								    .attr('cx', function (d) {
+								      return d.x;
+								    })
+								    .attr('cy', function (d) {
+								      return d.y;
+								    })
+								    .attr('r', 2)
+								    .attr('fill', '#fff');
+
+							})(d3);
+						</script>
+
+
+					</section>
+
+					<section>
+						<h2>Trivia</h2>
+						<p class="fragment" >Es gibt insgesamt 11 Millionen Schüler. 2,3 Millionen sind an Gymnasien, 2.8 Millionen in der Grundschule <a class="link" href="https://www.destatis.de/DE/ZahlenFakten/GesellschaftStaat/BildungForschungKultur/Schulen/Schulen.html">(Statista, Mai 2017)</a>.</p>
+
+						<p class="fragment" >Es gab im Jahr 2012 15.971 Grundschulen, 13.456 Schulen im Sekundarbereich. Die meisten Schüler im Sekundarbereich I befanden sich im Gymnasium (1.493.645) <a class="link" href="https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/Bildungswesen-dt-pdfs/dossier_de_ebook.pdf">(Das Bildungswesen der Bundesrepublik Deutschland, 2015)</a></p>
+
+						<p class="fragment" >Durchschnittlich verbringen Schüler 40 Wochen im Jahr an der Schule. Das sind 5 Wochen mehr als der Durchschnitt. <a class="link" href="http://www.oecd-ilibrary.org/docserver/download/9616045e.pdf?expires=1494864175&id=id&accname=guest&checksum=4826CDAF2047320FFFF239228BE6B942">(OECD, 2016)</a>. Insgesamt verbringen Deutsche Schüler 7700 Stunden in der Schule <a class="link" href="http://www.oecd-ilibrary.org/docserver/download/9616045e.pdf?expires=1494860874&id=id&accname=guest&checksum=FAAB9F5EB599E1A4A520FEF9E4A4ECF3">(OECD, 2016)</a></p>
+
+						<p class="fragment" >Pro Klasse gab es im Sekundarbereich I im Jahr 2012 21,2 Schüler. Im Gymnasien 26,4. <a class="link" href="https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/Bildungswesen-dt-pdfs/dossier_de_ebook.pdf">(Das Bildungswesen der Bundesrepublick Deutschland, 2015)</a>. Die OECD macht leicht andere Angaben. Sie spricht von einer durchschnittlichen Klassengröße von 30 Schülern. China wiederum hat eine durchschnittliche Größe von 50 Schülern <a class="link" href="http://www.oecd-ilibrary.org/docserver/download/9616045e.pdf?expires=1494864175&id=id&accname=guest&checksum=4826CDAF2047320FFFF239228BE6B942">(OECD, 2016)</a>.</p>
+
+						<p class="fragment" >Es gab im Jahr 2012 121 Universitäten. Im Wintersemester waren 2.616.881 Studierende an Deutschen Universitäten eingeschrieben. <a class="link" href="https://www.kmk.org/fileadmin/Dateien/pdf/Eurydice/Bildungswesen-dt-pdfs/dossier_de_ebook.pdf">(Das Bildungswesen der Bundesrepublick Deutschland, 2015)</a></p>
+
+					</section>
+				</section>
+
+				<section data-transition="convex">
+					<section>
+						<h1>Synthese der bisherigen Inhalte</h1>
+						<p class="fragment">Sie haben nun 20 Minuten Zeit, eine Synthese aus den bisherigen Inhalten zusammen zu schreiben. Verfassen Sie dazu auf Ihrer Metaplankarte einen Paragrafen, der die Inhalte der letzten drei Sitzungen (inklusive heute) zusammen fast. Achten Sie darauf, einen zusammenhängende Synthese zu schreiben. Merken Sie sich die Nummer Ihrer Karte.</p>
+						<p class="fragment">Im nächsten Schritt verteilen Sie die Karten untereinander. Auf mein Kommando lesen Sie die erste Karte durch und vergeben der Karte einen Punktwert von 1 bis 10. 10 Punkte ist eine sehr gute Erklärung, 1 eine schlechte Erklärung. Eine gute Erklärung zeichnet sich dadurch aus, dass Sie für Sie verständlich ist und zusammenhängend geschrieben ist. Nachdem Sie Ihren Punktwert auf die Karte eingetragen haben, geben Sie die Karte einer weitere Person weiter. Wenn Sie eine Karte erhalten, die bereits 5 Zahlen erhalten hat, legen Sie die Karte an das Pult. Zählen Sie vorab alle Punkte zusammen.</p>
+						<p class="fragment">Die drei Karten mit den besten Bewertungen werden am Ende vorgelesen.</p>
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/d3.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/visualizations.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				width: "60%",
+				height: "100%",
+				controls: true,
+				//slideNumber: 'c/t',
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
