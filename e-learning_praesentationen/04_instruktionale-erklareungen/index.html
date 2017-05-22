@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script src="js/d3.min.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+<!-- Landing page -->
+				<section data-transition="convex" >
+					<h1>Grundlagen des E-Learning</h1>
+					<h2>Instruktionale Erklärungen</h2>
+				</section>
+
+				<section data-transition="convex" data-background="#6600ff">
+					
+					<section>
+						<h1>Warum gibt es so viele schlechte Texte?</h1>
+					</section>
+
+					<section>
+						<p>&#187;I'm a digital and social-media strategist. I deliver programs, products, and strategies to our corporate clients across the spectrum of communication functions.&laquo;</p>
+						
+						<p style="font-weight: bold" class="fragment">&raquo;I teach big companies how to use Facebook&laquo;</p>
+
+						<span class="credit">
+							<a href="https://www.youtube.com/watch?v=OV5J6BfToSw">The Royal Institution (2017)</a>
+						</span>
+					</section>
+
+
+					<section>
+						<p>&#187;Mild exposure to CO can result in accumulated damage over time. Extreme exposure to CO may rapidly be fatal without producing significant warning symptoms.&laquo;</p>
+						
+						<p style="font-weight: bold" class="fragment">&raquo;Using a generator indoors CAN KILL YOU IN MINUTES&laquo;</p>
+
+						<span class="credit">
+							<a href="https://www.youtube.com/watch?v=OV5J6BfToSw">The Royal Institution (2017)</a>
+						</span>
+					</section>
+
+					<section>
+						<p>&#187;A period of unfavorable weather set in.&laquo;</p>
+						
+						<p style="font-weight: bold" class="fragment">&raquo;It rained every day for a week.&laquo;</p>
+					</section>
+
+					<section>
+						<h2>Theorie 1</h2>
+						<h3>Schlechter Stil ist die Wahl der Autorin</h3>
+						<p class="fragment">Autoren versuchen &#132;akademisch&#148; zu wirken.</p>
+						<p class="fragment">Autoren versuchen Ihr &#132;unsicheres Wissen&#148; zu verschleiern.</p>
+					</section>
+
+					<section>
+						<h2>The Bad Writing Contest</h2>
+						<p>&raquo;The move from a structuralist account in which capital is understood to structure social relations in relatively homologous ways to a view of hegemony in which power relations are subject to repetition, convergence, and rearticulation brought the question of temporality into the thinking of structure, and marked a shift from a form of Althusserian theory that takes structural totalities as theoretical objects to one in which the insights into the contingent possibility of structure inaugurate a renewed conception of hegemony as bound up with the contingent sites and strategies of the rearticulation of power.&laquo;</p>
+
+						<span class="credit">
+							<a href="http://www.denisdutton.com/bad_writing.htm">Dutton (2017)</a>
+						</span>
+					</section>
+
+					<section data-background-image="img/darwin.jpg">
+						<p style="padding: 10px; border-radius: 10px; background-color: #fff; opacity: 0.8; color: #000">&raquo;Man has an instinctive tendency to speak, as we see in the babble of our young children, whereas no child has an instinctive tendency to bake, brew, or write.&laquo; <a style="color: #000" class="link" href="http://stevenpinker.com/publications/sense-style-thinking-persons-guide-writing-21st-century">(Pinker, 2014, S. 27)</a></p>
+
+						<span class="credit">
+							<a href="http://www.freepik.com/index.php?goto=41&idd=668967&url=aHR0cDovL3BpeGFiYXkuY29tL2VuL2NoYXJsZXMtcm9iZXJ0LWRhcndpbi1zY2llbnRpc3RzLTYyOTExLw==y">Image from freepik</a>
+						</span>
+					</section>
+
+					<section>
+						<h2>Warum ist es schwer, Schreiben zu lernen?</h2>
+						<p class="fragment">Während wir Sprechen lernen, inteagieren wir mit anderen. Unsere Gesprächspartner geben uns Input. Beim Schreiben haben wir keine Gesprächspartner. <a class="link" href="https://katalog.ub.uni-freiburg.de/opac/RDSIndex/Search?lookfor=scardamalia+und+bereiter&type=AllFields&limit=10&sort=py+desc">(Scardamalia & Bereiter, 1987)</a></p>
+						<p class="fragment">Beim Schreiben müssen wir mehrere Prozesse gleichzeitig steuern: Wir müssen uns Schreibziele überlegen, Sätze schreiben und diese revidieren. <a class="link" href="http://www.jstor.org/stable/356600">(Flower & Hayes, 1981)</a></p>
+						<p class="fragment">Wir sehen und hören unsere Leser nicht.</p>
+					</section>
+
+				</section>
+
+				<section data-transition="convex" data-background="#6600ff">
+
+					<section>
+						<h1>Was zeichnet gute Texte aus?</h1>
+					</section>
+
+					<section>
+						<h2>Ein paar Beispiele</h2>
+						<p class="fragment">&#132;Cut unnecessary words and phrases; learn to part with your words!&#148; <a class="link" href="https://lagunita.stanford.edu/courses/Medicine/SciWrite-SP/SelfPaced/courseware/c38dc89a3b544d2e847f9fdd910794fa/23c1b019f2c34737b1e803b0df809e71/">(SciWrite-SP, 2017)</a></p>
+						<p class="fragment">Omit Needless Words: &#132;the reason why is that&#148; ->  &#132;because&#148; <a class="link" href="https://katalog.ub.uni-freiburg.de/opac/RDSIndex/Search?lookfor=strunk+white+the+elements+of+style&type=AllFields&limit=10&sort=py+desc">(Strunk & White, 2000)</a></p>
+						<p class="fragment">&#132;The habitual use of the active voice, however, makes for forcible writing. This is true not only in narrative concerend principally with action but in writing of any kind. Many a tame sentence of description or exposition can be made lively and emphatic by substituting a transitive in the active voice for some such perfunctory expression as <i>there is</i> or <i>could be heard</i>.&#148; (Strunk & White, 2000, S. 18)</p>
+					</section>
+
+					<section>
+						<h2>Schreibempfehlungen sollten auf kognitiver Forschung gründen</h2>
+						<p>Wenngleich hilfreich, sind diese Beispiele zu mechanisch und beruhen mehr auf anekdotischer Evidenz als auf kognitiver Forschung.</p>
+					</section>
+
+					<section data-background-image="img/net.jpg">
+						<p style="background-color: #000; color: #fff; padding: 10px; border-radius: 10px; opacity: 0.8;">Beim Schreiben müssen wir aus einem Netz an Wissen eine Reihe an Wörtern produzieren. Diese Wörter sollten bei instruktionalen Texten so geschrieben sein, dass sie verstanden werden.</p>
+					</section>
+				</section>
+
+				<!-- PISA -->
+				<section data-transition="convex" data-background="#6600ff">
+
+					<section>
+						<h1>Textkohäsion</h1>
+					</section>
+
+					<section>
+						<p>Verständliche Texte sind kohäsive Texte <a class="link" href="https://scholar.google.de/scholar?hl=de&q=graesser+discourse+comprehension&btnG=&lr=&oq=discour">(Graesser, Millis, Zwaan, 1997, S. 170).</a></p>
+						<p>Selbst wenn jeder Satz in einem Text gut geschrieben ist, kann sich ein Text als zerlegt, unfokussiert, gehackt anhören.</p>
+					</section>
+
+					<section>
+						<h2>Construction-Integration Model</h2>
+						<p>Um zu verstehen, weshalb dem so ist, müssen wir sehen, wie wir uns die Verarbeitung von Texten vorstellen. Texte werden auf unterschiedlichen Wegen interpretiert <a href="https://scholar.google.de/scholar?q=Toward+a+Model+of+Text+Comprehension+and+Production&btnG=&hl=de&as_sdt=0%2C5" class="link">(Kintsch & van Dijk, 1978)</a></p>
+						<p class="fragment">Surface Code</p>
+						<p class="fragment">Textbase</p>
+						<p class="fragment">Situationale Model</p>
+					</section>
+
+					<section>
+						<h3>Surface Code</h3>
+						<p>Der Surface Code ist die wortwörtliche Entsprechung des Textes. Es ist die Verarbeitung die stattfindet, wenn der Lehrer fragt: &#132;Was habe ich gerade gesagt?&#148; Die Erinnerungsdauer für den Surface Code ist sehr kurzlebig.</p>
+					</section>
+
+					<section>
+						<h3>Textbase</h3>
+						<p>Die Textbase umfasst die aus den Texten gewonnenen <span class="font-weight: bold">Propositionen</span>. Eine Proposition bezieht sich auf einen Zustand, ein Ereignis oder eine Aktion, der wir einen Wahrheitswert zu sprechen. Es enthält ein Predikat (main Verb, Connective) und verschiedene Argumente. Der exakte Wortlaut bleibt nicht im Gedächtnis <a class="link" href="https://scholar.google.de/scholar?hl=de&q=graesser+discourse+comprehension&btnG=&lr=&oq=discour">(Graesser, Millis, Zwaan, 1997, S. 168)</a>.</p>
+
+						<div class="fragment">
+							<p>eat (OBJECT = Alex)</p>
+
+							<p style="text-align: left">Alec ate the banana. </p>
+							<p style="text-align: left">The banana was eaten by Alec.</p>
+							<p style="text-align: left">Did Alec eat the banana?</p>
+							<p style="text-align: left">Alec, eat the banana.</p>
+						</div>
+							
+					</section>
+
+					<section>
+						<h3>Surface Code</h3>
+						<p>Wenn wir einen Text lesen, verwenden wir unser Vorwissen:</p>
+						<code style="text-align: left">&#132;Jane woke up in a panic on Thursday morning. Her rent check was due the next day, but there was no money in her bank account.&#148; <a class="link" href="http://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780195376746.001.0001/oxfordhb-9780195376746-e-29">(Gernsbacher & Kaschak, 2013, S. 462)</a>.</code> 
+						<p>Wir können aus diesem Text schließen, dass Jane in Panik ausgebrochen ist, da wir wissen, dass die Rente am Monatsanfang gezahlt werden muss und sie dies nicht kann, da sie kein Geld auf der Bank hat. Durch die Verbindung zwischen der Textbase, welche aus den Propositionen besteht und unserem Vorwissen, schaffen wir uns ein mentales Modell. Wir nennen dieses mentale Modell Situationsmodell.</p>
+					</section>
+
+					<section>
+						<h2>Construction-Integration Model</h2>
+						<p class="fragment">Das Construction-Integration Model unterteilt die Konstruktion und die Integration der Textbasis und des Situationsmodells.</p>
+						<p class="fragment">In der Konstruktionsphase wird die Textbasis mit bestehendem Vorwissen abgeglichen.</p>
+						<p class="fragment">In der Integrationsphase wird die neue Information in das Situationsmodell integriert.</p>
+						<p class="fragment">&#132;Comprehension is achieved by building structured representations of the information presented in the textbase&#148; <a class="link" href="http://www.oxfordhandbooks.com/view/10.1093/oxfordhb/9780195376746.001.0001/oxfordhb-9780195376746-e-29">(Gernsbacher & Kaschak, 2013, S. 472).</a> </p>
+					</section>
+					
+					<section>
+						<h2>Kohäsion?</h2>
+						<p>Während dem Lesen bauen wir kontinuierlich unser Situationsmodell auf. Wir müssen die neuen Propositionen in die aktuelle Situationsmodell integrieren. Indem wir sprachliche Brücken zwischen Sätzen bauen, können wir diese Integration erleichtern. Vor allem, wenn du als Leser nicht in der Lage bist, Inferenzen zu bilden. Ist es uns nicht möglich, die eingehende Information in unser Situationsmodell zu integrieren, fühlt sich ein Text nicht-kohärent an.</p>
+					</section>
+
+					<section>
+						<h2>Kohäsion vs. Kohärenz</h2>
+						<div style="display: flex">
+							<div style="width: 40%; padding-right: 5%; text-align: left">Kohärenz ist die Wahrnehmung des Zusammenhangs eines Textes. Ein Text ist für dich kohärent, wenn du ein zusammenhängedes Situationsmodell aufbauen kannst. Kohärenz entsteht daher durch die Verbindung der Informationen in dem Text und dem eigenen Vorwissen. </div>
+							<div style="width: 40%; padding-right: 5%; text-align: left">Kohäsion wiederum bewegt sich lediglich auf der Textebene. Kohäsion wird durch verschiedene sprachliche Mittel ermöglicht: Zum Beispiel wiederholen wir ein Nomen in zwei Sätzen, um anzuzeigen, dass wir von der gleichen person sprechen. Oder wir verwenden ein Pronomen, welches wir in der Lage sind aufzulösen.</div>
+						</div>
+					</section>
+
+					<section>
+						<h2>Globale Kohäsion</h2>
+						<p>Wenn wir nun versuchen einen Text zu verstehen, ist es vor allem wichtig, dass wir das Thema des Textes verstehen. </p>
+					</section>
+
+					<section>
+						<h2>Globale Kohäsion</h2>
+						<p>A newspaper is better than a magazine</p>
+						<p>A seashore is a better place than the street</p>
+						<p>At first it is better to run than to walk</p>
+						<p>You may have to try several times/It takes some skill but it's easy to learn</p>
+						<p>Even young children can enjoy it</p>
+						<p>Once successful, complications are minimal</p>
+						<p>Birds seldom get too close</p>
+						<p>Rain, however, soaks in very fast</p>
+						<p>... </p>
+						<p><a href="http://www.sciencedirect.com/science/article/pii/S0022537172800069" class="link">(Bransford & Johnson, 1972, S. 722)</a></p>
+					</section>
+
+					<section>
+						<h2>Globale Kohäsion</h2>
+						<p>Der Text dreht sich um das Kitefliegen. Leser müssen wissen, worum es geht. Paragrafen sollten aus diesem Grunde einen Topic-Sentence haben (Strunk & White, 2000, S. 16). Sprachliche Mittel, die helfen, die grobe Struktur des Textes besser zu verarbeiten, nennen wir globale Kohäsionsmittel. Global, da sie sich auf den ganzen Text beziehen <a class="link" href="https://scholar.google.de/scholar?hl=de&q=graesser+discourse+comprehension&btnG=&lr=&oq=discour">(Graesser, Millis, Zwaan, 1997, S. 14)</a>. Unterschiedliche Texte verlangen andere Dinge an die globale Kohäsion.</p>
+						<p>Bei instruktionalen Texten, die wir in E-Learning Kursen schreiben, ist dies auch wichtig. Wittwer und Renkl sprechen hier von der Prinzipienorientierung <a class="link" href="http://www.tandfonline.com/doi/abs/10.1080/00461520701756420">(Wittwer & Renkl, 2008)</a>. Instruktionale Texte sollten sich an den zentralen Prinzipien eines Faches orientieren. Eine Erklärung über die Verarbeitung von Text und Bild, sollte sich an der Multimedia Theorie von Mayer orientieren. Eine Erklärung über die Tatsache, dass wir uns den Inhalt von Klausuren nicht lange merken sollen, sollte sich an der Theorie der Konsolidierung orientieren</p>
+					</section>
+
+					<section>
+						<p>&#132;If space is now expanding, then at ever earlier times the universe must have been ever smaller. At some moment in the distant past, everything we now see - the ingredients responsible for every planet, every star, every galaxy, even space itself - must have been compressed to an infinitesimal speck that then swelled outward, evolving into the universe as we know it. The big-bang theory was born ... Yet scientists were aware that the big-bang theory suffered from a significant shortcoming. Of all things, it leaves out the bang. Einstein's equations do a wonderful job of describing how the universe evolved from a split second after the bang, but the equations break down (similar to the error message returned by a calculator when you try to divide 1 by 0) when applied to the extrem environment of the universe's earliest moment. The big bang thus provides no insight into what might have powered the bang itself.&#148; <a class="link" href="http://stevenpinker.com/publications/sense-style-thinking-persons-guide-writing-21st-century">(Pinker, 2014, S. 31)</a></p>
+					</section>
+
+					<section>
+						<h2>Lokale Kohäsion</h2>
+						<p>Wenn es eine globale Kohäsion gibt, muss es auch eine lokale Kohäsion geben. Lokale Kohäsion findet zwischen Sätzen statt. Nehmen wir das Beispiel von vorhin:</p>
+						<div class="fragment">
+							<p>A newspaper is better than a magazine</p>
+							<p>A seashore is a better place than the street</p>
+							<p>At first it is better to run than to walk</p>
+							<p>You may have to try several times/It takes some skill but it's easy to learn</p>
+							<p>Even young children can enjoy it</p>
+							<p>Once successful, complications are minimal</p>
+							<p>Birds seldom get too close</p>
+							<p>Rain, however, soaks in very fast</p>
+							<p>... </p>
+							<p><a href="http://www.sciencedirect.com/science/article/pii/S0022537172800069" class="link">(Bransford & Johnson, 1972, S. 722)</a></p>		
+						</div>
+					</section>
+
+					<section>
+						<h2>Lokale Kohäsion</h2>
+						<p>&#132;Local coherence is achieved if the reader can connect the incoming statement to information in the previous sentence or WM.&#148; <a class="link" href="https://scholar.google.de/scholar?hl=de&q=graesser+discourse+comprehension&btnG=&lr=&oq=discour">(Graesser, Millis, Zwaan, 1997, S. 178)</a>. Die Folge ist, dass sich das Verständnis eines Textes verschlechtert <a class="link" href="https://scholar.google.de/scholar?hl=de&q=graesser+discourse+comprehension&btnG=&lr=&oq=discour">(Graesser, Millis, Zwaan, 1997, S. 14)</a>, eben weil wir nicht mehr in der Lage sind in der Integrationsphase nach Kintsch ein adequates Situationsmodell aufzubauen.</p>
+					</section>
+
+					<section>
+						<p>&#132;<span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">Cognitive load theory</span> is an instructional design theory, which is aimed toward developing guidelines for the design of effective <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">learning materials</span> based on assumptions of human working memory. The basic idea of <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">cognitive load theory</span> is that cognitive capacity in the working memory is limited, especially while <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">learning</span> complex cognitive tasks. Thus, during <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">learning</span>, students can be overloaded by the amount of information that needs to be processed simultaneously in working memory. A distinction is made in <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">cognitive load theory</span> between three types of load: <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">intrinsic</span>, extraneous, and germane. According to <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">cognitive load theory</span>, the central task in instructional design is to reduce extraneous load while increasing germane load, without exceeding working memory limits. <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">Intrinsic load</span> depends both on the interactivity of elements and on the <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">learner’s</span> prior knowledge. Extraneous load is generated by the manner in which information is presented to <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">learners</span> and imposed by information and activities that do not contribute to learning. Germane load refers to the <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">cognitive load</span> conducive to productive learning and is related to activities that foster learning. Intrinsic, extraneous, and germane load are considered additive in that, taken together, the total load must not exceed the working memory resources available if learning is to occur.&#148; <a class="link" href="http://psycnet.apa.org/journals/xap/23/1/29/">(Lachner, Burkhart, & Nückles, 2017)</a></p>
+					</section>
+
+					<section>
+						<h2>Mittel der lokalen Kohäsion</h2>
+						<p><span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">Lexikal Overlap</span>. Wenn es zwischen den Propositionen zweier Sätze eine Überlappung in den Argumenten gibt, sind wir in der Lage, eine Brücke zu schaffen. Die einfachste Methode, lexical overlap herzustellen, besteht darin, wichtige Nomen zu wiederholen.</p>
+						<p><span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">Bridging Information</span>: Sie verwendet Wegweiser, die die Verbindung zu den anliegenden Sätzen ermöglichen. Indem ich beispielsweise sage, weiß ich als Leser, dass nun eine Elaboration zu etwas folgt, was ich gerade gehört habe und noch im Arbeitsgedächtnis halte</p>
+						<p><span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">Koreferenzen</span>. Hans ging in das Kino. <span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px; opacity: 0.5">Er</span> schaute sich mit Miriam Die Schöne und das Biest an.</p>
+						<p><span style="color: #fff; background-color: #000; padding: 10px; border-radius: 10px">Konnektoren</span>. Verknüpfungswörter zwischen Aussagen. Kopulativ (und), temporal (danach), kausal (deshalb) und spezifizierend (wo).</p>
+					</section>
+
+				</section>
+
+				<section data-transition="convex" data-background="#6600ff">
+					<section>
+						<h1>Zusammenfassung</h1>
+						<p class="fragment">Schreiben zu Lernen ist aufwändig, da es sich um eine sekundäre Fähigkeit handelt.</p>
+						<p class="fragment">Gute Texte zeichnen sich durch mehrere Mittel aus: Starke Verben, Topic Sentences, New vs. Given Information, Omit Needless words.</p>
+						<p class="fragment">Tipps für gute Texte sollten auf empirisch-kognitiver Forschung gründen.</p>
+						<p class="fragment">Textkohäsion ist ein Mittel zur Förderung verständlicher Texte.</p>
+						<p class="fragment">Textkohäsion kann man global als auch lokal beschreiben.</p>
+						<p class="fragment">Global umfasst den Text als Makrostruktur und das Textgenre.</p>
+						<p class="fragment">Lokal umfasst die Überlappung aneinanderliegender Sätze.</p>
+						<p class="fragment">Gute instruktionale Erklärungen sind kohäsiv und orientieren sich an den zentralen Prinzipien des Themas.</p>
+					</section>
+
+				</section>
+
+				<section data-transition="convex">
+					<section>
+						<h1>Aufgabe</h1>
+						<p style="color: #ccc">Finden Sie Mittel, um aus folgendem Text die Kohäsion zu verbessern.</p>
+						<p style="color: #ccc">Versuche den Text an zentralen Prinzipien zu orientieren (globale Kohäsion). Versuche die Sätze lokal kohäsiv miteinander zu verbinden.</p>
+						<p class="fragment">The heart is the hardest-working organ in the body. We rely on a regular blood supply every moment of every day. Any disorder that stops the blood supply is a threat to life. Heart disease is very common. More people are killed every year in the U.S. by heart disease than by any other disease. A congenital disease is one that a person is born with. Most babies are born with perfect hearts. In about one in every 200 cases something goes wrong. Sometimes a valve develops the wrong shape. It may be too tight, or fail to close properly. Sometimes a gap is left in the septal wall between the two sides of the heart. This is often called a septal defect. When a baby's heart is badly formed, it cannot work efficiently. The blood does not receive enough oxygen. The baby becomes breathless. The blood cannot get rid of carbon dioxide through the lungs. It becomes purplish, and the baby's skin looks blue. It is now possible to save the lives of many blue babies.</p>
+					</section>
+
+					<section>
+						<div style="display: flex">
+							<div style="width: 45%; padding-right: 4%; font-size: 26px; text-align: left"><p>The heart is the hardest-working organ in the body. We rely on a regular blood supply every moment of every day. Any disorder that stops the blood supply is a threat to life. Heart disease is very common. More people are killed every year in the U.S. by heart disease than by any other disease. A congenital disease is one that a person is born with. Most babies are born with perfect hearts. In about one in every 200 cases something goes wrong. Sometimes a valve develops the wrong shape. It may be too tight, or fail to close properly. Sometimes a gap is left in the septal wall between the two sides of the heart. This is often called a septal defect. When a baby's heart is badly formed, it cannot work efficiently. The blood does not receive enough oxygen. The baby becomes breathless. The blood cannot get rid of carbon dioxide through the lungs. It becomes purplish, and the baby's skin looks blue. It is now possible to save the lives of many blue babies.</p></div>
+							<div style="width: 45%; padding-right: 4%; font-size: 26px; text-align: left">
+								<h3>Heart disease</h3>
+								<p>The heart is the hardest-working organ in the body. We rely on <span style="color: #b27fff">it</span> to <span style="color: #b27fff">supply</span> blood <span style="color: #b27fff">to the body</span> every moment of every day. Any disorder that stops <span style="color: #b27fff">the heart from</span> supplying the blood <span style="color: #b27fff">to the body</span> is a threat to life. Heart disease <span style="color: #b27fff">such a disorder</span>. <span style="color: #b27fff">It is very common</span>. More people are killed every year in the U.S. by heart disease than by any other disease.</p> 
+
+								<h4 style="padding-top: 10px">Congenital Heart Disease</h4>
+								<p>A congenital disease is <span style="color: #b27fff">a defect</span> that a <span style="color: #b27fff">baby</span> is born with. Most babies are born with perfect hearts. <span style="color: #b27fff">But</span> one in every 200 <span style="color: #b27fff">babies is born with a bad heart</span> ...</p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/d3.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/visualizations.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				width: "60%",
+				height: "100%",
+				controls: true,
+				//slideNumber: 'c/t',
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
