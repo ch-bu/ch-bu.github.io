@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa|Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bubbler+One|Inconsolata" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<!--<link rel="stylesheet" href="lib/css/zenburn.css">-->
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script src="js/d3.min.js"></script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+	
+				<!-- Titel -->
+				<section data-transition="convex">
+					<section>
+						<h1>Förderung kohäsiven Schreibens durch Signaling</h1>
+						<h2>Aktuelle Studienvorhaben</h2>
+						<p><span class="spoken">In Zusammenarbeit mit Prof. Dr. Matthias Nückles und Dr. Andreas Lachner</span></p>
+					</section>
+					
+					<section data-transition="none">
+						<h2>Aufbau</h2>
+						<p>1. Theorie</p>
+						<p>2. Bisherige Ergebnisse</p>
+						<p>3. Aktuelle Studie</p>
+						<p>4. Diskussion</p>
+					</section>
+				</section>
+				
+				<!-- Theoretische Herleitung -->
+				<section data-transition="convex">
+					<section data-transition="none">
+						<h1>Theorie</h1>
+					</section>
+
+					<section data-transition="none">
+						<h2>Schwierigkeit beim Verfassen kohäsiver Texte</h2>
+						<p class="quote">Studierende haben Schwierigkeiten im Verfassen kohäsiver Texte <span>(Concha & Paratore, 2011)</span>.</p>
+						<p class="quote">Ursächlich ist die Komplexität des Schreibens. Schreiber müssen Revisionsziele planen, ihren Entwurf mit den Zielen abgleichen, Probleme im Entwurf lokalisieren, und geeignete Revisionsstrategien ableiten. Diese Prozesse treten simultan und iterativ auf <span>(Hayes & Flower, 1986)</span>.
+						<p class="quote">Um diesen Anforderungen zu begegnen, benötigt es formatives Feedback über den Schreibprozess <span>(Graham, Harris, & Herbert, 2011; Kellog & Raulerson, 2007)</span>.</p>
+
+						<aside class="notes">
+							Kohäsion ist nur ein Merkmal verständlicher Texte. Entscheidend ist natürlich die Vorwissensadaption, die Givedness von Information, die Beachtung des syntaktischen Aufbaus eines Textes, der typografischen Merkmale.
+						</aside>
+					</section>
+
+					<section id="section-feedback" data-transition="none">
+						<h2>Kohäsionsmittel als Merkmal verständlicher Texte</h2>
+						<p class="quote">Kohäsionmittel fördern das Verständnis der Inhalte expositorischer Texte <span>(Graesser, Millis, & Zwaan, 1997)</span>. Die Verwendung solcher Kohäsionsmittel können für wissende Leser abträglich sein <span>(O'Reilly & McNamara, 2007)</span>. Zusätzlich moderiert die Lesefähigkeit die Wirkung dieser Kohäsionsmittel <span>(Wittwer & Ihme, 2014)</span>.</p>
+						<p class="quote fragment">Kohäsion ist ein wichtiges Merkmal argumentativer und instruktionaler Texte. Zum einen, um jemanden zu überzeugen, zum anderen, um Lernen zu induzieren.</p>
+						
+						<aside class="notes">
+							
+						</aside>
+					</section>
+
+					<section data-transition="none">
+						<h2>Kohäsionsmittel nach Halliday und Hasan</h2>
+						<p>Substitution <span class="spoken">Did you ever find a lawnmover? Yes I borrowed one from my neigbor</span></p>
+						<p>Ellipsis <span class="spoken">Do you want to go with me to the store? Yes, I do.</span></p>
+						<p>Reference Cohesion <span class="spoken">At home, my father is himself. He relaxes and acts in his normal manner.</span></p>
+						<p>Conjunctive Cohesion <span class="spoken">A friend of mine went to an out-of-state college. Before she left, ...</span></p>
+						<p class="fragment highlight-blue">Lexical cohesion <span class="spoken">Some tennis players are using obscene gestures and languages. Other professional athletes do similar things.</span></p>
+
+						<span class="credit">
+							<a href="">(Hobbs, 1979)</a>
+						</span>
+
+						<aside class="notes">
+							Darauf eingehen, dass die lexical cohesion das hauptmittel ist, um kohäsion herzustellen.
+						</aside>
+					</section>
+
+					<section data-transition="none">
+						<h2>Webbasiertes Feedbacks</h2>
+						<p class="quote">Die Effektivität formativen Feedbacks in webbasierten Systemen ist kaum untersucht <span>(Allen, Jacovina, & McNamara, 2016)</span></p>
+						<p class="quote fragment">&#8594; In unserer Forschung versuchen wir herauszufinden, inwieweit das Schreiben kohäsiver Texte durch webbasiertes Concept Map Feedback gefördert werden kann.</p>
+
+						<aside class="notes">
+							Betonen, dass die Erforschung des Feedbacks beim Schreiben durch automatisierte System nicht nicht ausgereift ist. Die meiste Forschung wurde zu Essayscoring gemacht. Ansonsten gibt es WritingPal / Summary Street, welche teils nicht spezifisch genug sind. Webbasierte Systeme können immerhin eine kleine Abhilfe schaffen, die teils zeitintensive Betreuung zu minimieren. 
+						</aside>
+					</section>
+
+					<section data-transition="none">
+						<h2>Cohviz</h2>
+						<p class="fragment">&#132;Michael geht in die Schule. In dieser Grundschule spielen die Kinder mit Spielzeug. Die Lehrerin ist aus München.&#148;</p>
+						<svg class="fragment" id="cohvizexample"></svg>
+
+						<aside class="notes">
+							Darauf eingehen, dass wir nur einen Teil der Kohäsion betrachten. 
+						</aside>
+					</section>
+
+				</section>
+				
+				<!-- Bisherige Ergebnisse -->
+				<section data-transition="convex">
+					<section data-transition="none">
+						<h1>Bisherige Ergebnisse</h1>
+					</section>
+
+					<section data-transition="none">
+						<h2>Mind the Gap! Study 2</h2>
+						<div style="display: flex">
+							
+							<div class="fragment" style="width: 50%">
+								<svg id="mtgstudy2"></svg>
+								<p style="font-size: 1.5rem" class="quote"><i>F</i>(1, 39) = 6.47, <i>p</i> = .02, n<sup>2</sup> = .14 (medium to large effect)</p>
+							</div>
+
+							<div class="fragment" style="width: 50%">
+									<svg id="mtgstudy2global"></svg>
+									<p style="font-size: 1.5rem" class="quote"><i>F</i>(1, 39) = 4.77, <i>p</i> = .04, n<sup>2</sup> = .11 (medium effect)</p>
+							</div>
+						</div>
+
+						<span class="credit">
+							<a href="">(Lachner, Burkhart, & Nückles, 2017a)</a>
+						</span>
+
+						<aside class="notes">
+							Im Schnitt schreiben die Probanden 140 Wörter. Keine Gruppenunterschiede. 
+						</aside>
+						
+					</section>
+
+					<section data-transition="none">
+						<h2>Mind the Gap! Study 3</h2>
+						<div style="display: flex">
+							<div class="fragment" style="width: 50%">
+								<svg id="mtgstudy3local"></svg>
+								<p style="font-size: 1.5rem" class="quote">Training: <i>F</i>(1, 24) = 15.41, <i>p</i> = .001, n<sup>2</sup> = .39 (large effect)</p>
+								<p style="font-size: 1.5rem" class="quote">Transfer: <i>F</i>(1, 25) = 18.18, <i>p</i> = .001, n<sup>2</sup> = .42 (large effect)</p>
+							</div>
+							<div class="fragment" style="width: 50%">
+								<svg id="mtgstudy3global"></svg>
+								<p style="font-size: 1.5rem" class="quote">Training: <i>F</i>(1, 24) = 2.93, <i>p</i> = .10, n<sup>2</sup> = .11 (medium effect)</p>
+								<p style="font-size: 1.5rem" class="quote">Transfer: <i>F</i>(1, 25) = 7.78, <i>p</i> = .01, n<sup>2</sup> = .24 (large effect)</p>
+							</div>
+						</div>
+						
+						<span class="credit">
+							<a href="">(Lachner, Burkhart, & Nückles, 2017a)</a>
+						</span>
+
+					</section>
+
+					<section data-transition="none">
+						<h2>Formative Computer-Based Feedback in the university classroom</h2>
+						
+						<svg id="fflocal"></svg>
+
+						<p style="font-size: 1.5rem" class="quote">Haupteffekt der Experimentalgruppen. <i>F</i>(1, 248) = 4.65, <i>p</i> = .01, n<sup>2</sup> = .04</p>
+						
+						<span class="credit">
+							<a href="">(Lachner, Burkhart, & Nückles, 2017b)</a>
+						</span>
+					</section>
+
+					<section data-transition="none">
+						<h2>Formative Computer-Based Feedback in the university classroom</h2>
+						<svg id="ffglobal"></svg>
+						<p style="font-size: 1.5rem" class="quote">Kein Haupteffekt der Experimentalgruppen. <i>F</i>(1, 248) = 1.21, <i>p</i> = .30, n<sup>2</sup> = .01</p>
+
+						<span class="credit">
+							<a href="">(Lachner, Burkhart, & Nückles, 2017b)</a>
+						</span>
+					</section>
+
+					<section data-transition="none">
+						<p class="quote">Bisher konnten wir belegen, dass CohViz einen Effekt auf die lokale Kohäsion hat. Effekte auf die globale Kohäsion waren selten. Die Ergebnisse der lokalen Kohäsion konnten in einer Vorlesung repliziert werden <span>(Lachner, Burkhart, & Nückles, 2017b)</span>.</p>
+					</section>
+				</section>
+
+				<!-- Signalingstudie -->	
+				<section data-transition="convex">
+					<section data-transition="none">
+						<h1>Förderung kohäsiven Schreibens durch Signaling</h1>
+					</section>
+
+					<section data-transition="none">
+						<h2>CohViz</h2>
+						<img src="img/cohviz.png" alt="">
+					</section>
+
+					<section data-transition="none">
+						<h2>Split-Attention bei CohViz</h2>
+						<p class="quote">Durch die Repräsentation von Text und Visualisierung entsteht ein Split-Attention Effekt <span>(Sweller, van Merrienboer, & Paas, 1998)</span>. Durch die Integration von Text und Visualisierung müssen Lernende kognitive Anforderungen bewältigen, die unabhängig von der Schreibaufgabe sind (z.B. Suchstrategien) <span>(Mayer & Moreno, 2003)</span>.</p>
+
+						<p class="quote fragment">Novizen haben eine Neigung, den Text stärker als die Visualisierung zu verarbeiten <span>(Renkl & Scheiter, 2015)</span>. Zudem ist die Repräsentation einer Concept-Map schwierig zu verarbeiten <span>(Eppler, 2006)</span>.</p>
+					</section>
+
+					<section data-transition="none">
+						<h2>Mind the Gap! Study 1</h2>
+						<img src="img/process.png" alt="">
+						<span class="credit">
+							<a href="">(Lachner, Burkhart, & Nückles, 2017a)</a>
+						</span>
+					</section>
+						
+					<section data-transition="none">
+						<h2>Umgang mit der Komplexität in Visual Displays </h2>
+						<p>Realität sollte durch Abstrakte ersetzt werden</p>
+						<p class="fragment highlight-blue">Cues sollen eingesetzt werden (z.B. Signaling, Color Coding)</p>
+						<p>Dynamische Elemente sollten entfernt werden</p>
+						<p>Prompts können eingesetzt werden</p>
+						<p>Physische Integration</p>
+
+						<span class="credit">
+							<a href="">(Renkl & Scheiter, 2015)</a>
+						</span>
+					</section>
+
+					<section data-transition="none">
+						<h2>Forschungsfrage</h2>
+						<p>Wirkt sich die Verwendung von Signaling bzw. die Integration von Text und Visualisierung in CohViz positiv auf die lokale Kohäsion, die globale Kohäsion und die Verständlichkeit aus?</p>
+					</section>
+
+					<section data-transition="none">
+						<h2>Concept Map Gruppe</h2>
+						<img src="img/cmap.png" alt="">
+					</section>
+
+					<section data-transition="none">
+						<h2>Concept Map Gruppe integriert</h2>
+						<img src="img/cmap-integrated.png" alt="">
+					</section>
+
+					<section data-transition="none">
+						<h2>Text Gruppe integriert</h2>
+						<img src="img/text-integriert.png" alt="">
+					</section>
+
+					<section data-transition="none">
+						<h2>Kontrollgruppe</h2>
+						<img src="img/control.png" alt="">
+					</section>
+
+					<section data-transition="none">
+						<h2>Hypothesen</h2>
+						<p class="quote fragment">Aktive Integrationshypothese <span>(Concept Map > Concept Map integriert > Text integriert > Kontrollgruppe)</span> <span class="spoken">Studierende werden durch die multiple Repräsentation angeregt, Text und Visualisierung aktiv zu integrieren</span>.</p>
+						<p class="quote fragment">Lokalisationshypothese <span>(Text integriert > Concept Map integriert > Concept Map > Kontrollgruppe)</span>. <span class="spoken">Die Integration von Text und Visualisierung reduziert unnötige Suchstrategien</span>. </p>
+						
+						<p class="quote fragment">Fokussierte Integrationshypothese <span>(Concept Map integriert > Concept Map > Text integriert > Kontrollgruppe)</span>. <span class="spoken">Durch Signaling wird die Integration auf die releveanten Merkmale fokussiert</span>.</p>
+					</section>
+
+					<section data-transition="none">
+						<h2>Versuchsablauf</h2>
+						<svg id="design"></svg>
+					</section>
+
+					<section data-transition="none">
+						<div style="display: flex">
+							<div style="width: 50%">
+								<h2>Unabhängige Variablen</h2>
+								<p class="quote">Versuchsgruppen</p>
+								<p class="quote">Lokale und globale Kohäsion im Draft (Fixed Factor)</p>
+							</div>
+							
+							<div class="fragment" style="width: 50%">
+								<h2>Abhängige Variablen</h2>
+								<p class="quote">Lokale Kohäsion <span class="spoken">Ratio kohäsiver Sätze / alle Sätze</span> </p>
+								<p class="quote">Globale Kohäsion <span class="spoken">Prinzipienorientierung nach Wittwer und Renkl (2008)</span></p>
+								<p class="quote">Verständlichkeit <span class="spoken">Eigenes Rating aus bisherigen Studien</span></p>
+								<p class="quote">Cognitive Load <span class="spoken">Fragebogen nach Berthold und Renkl (2009)</span></p>
+							</div>
+						</div>
+					</section>
+				</section>
+
+				<section data-transition="convex">
+					<h1>Diskussionsfragen</h1>
+					<p>Transferaufgabe <span class="spoken">Sollte ich eine Transferaufgabe integrieren?</span></p>
+					<p>Probandenakquise <span class="spoken">Für einen Signalingeffekt bräuchte ich 180 Probanden. Wie kann ich am Ende des Semesters noch so viele Probanden rekrutieren?</span></p>
+					<p>Versuchsbedinungen <span class="spoken">Sind die Versuchsbedingungen für euch aus experimenteller Sicht problemfrei?</span></p>
+					<p>Signaling <span class="spoken">Kann ich aus diesem Experiment überhaupt den Effekt des Signaling experimentell prüfen, da meine AVs auf die Kohäsion abzielt und ich keine Prozessdaten der Integration habe?</span></p>
+					<p>Theoretische Herleitung <span class="spoken">Scheint euch die theoretische Herleitung schlüssig? Wenn nein, an welcher Stelle könnte ich noch nacharbeiten?</span></p>
+				</section>
+
+			</div>
+
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/d3.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/visualizations.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				width: "70%",
+				height: "100%",
+				controls: true,
+				//slideNumber: 'c/t',
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>

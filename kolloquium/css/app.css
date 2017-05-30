@@ -1,0 +1,112 @@
+.reveal h1, .reveal h2, .reveal h3 {
+	text-align: left;
+	font-family: 'Comfortaa', cursive;
+
+}
+
+
+body, p, .reveal p, ul, .reveal ul {
+	font-family: 'Roboto', sans-serif;
+	text-align: left;
+	background-color: #f2f2f2;
+}
+
+h2.highlight-heading, h3.highlight-heading, h1.highlight-heading {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color:rgba(0, 0, 0, 0.7);
+	border-radius: 15px;
+	color: #fff;
+}
+
+/*a {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #ff6600;
+	color: #fff;
+	text-decoration: none;
+}*/
+
+.reveal a.link {
+	color: #fff;
+}
+
+.reveal a.link:hover {
+	color: #000;
+	background-color: #fcefee;
+	border-radius: 10px;
+}
+
+a.link:after {
+    position: relative;
+    content: "﻿°";
+    margin-left: .1em;
+    top: -.1em;
+    color: #933;
+}
+
+span.credit {
+	position: absolute;
+	bottom: -10vh;
+	right: -5vw;
+	color: #ccc;
+	font-size: 0.6em;
+}
+
+span.credit a {
+	color: #ccc;
+}
+
+span.credit a:hover {
+	color: #ccc;
+}
+
+.reveal section img {
+	margin: 0 15px;
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+
+q {
+	quotes: "»" "«" "‘" "’";
+}
+
+p.quote {
+
+}
+
+/*p.quote::before {
+	content: "„";
+}
+
+p.quote::after {
+	content: "”";
+}*/
+
+p.quote span {
+	filter: brightness(75%);
+	color: #ccc;
+	font-family: 'Inconsolata', monospace;;
+}
+
+path {
+	stroke: #000;
+}
+
+line {
+	stroke: #4c4c4c;
+}
+
+text {
+	fill: #000;
+	font-size: 1.4rem;
+}
+
+.reveal .spoken {
+	font-family: 'Cutive Mono', monospace;
+	color: #4c4c4c;
+}
