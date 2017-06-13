@@ -46,3 +46,8 @@ section {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+#dragdrop {
+   max-height: 790px;
+   overflow-y: auto;
+}
