@@ -15,7 +15,7 @@
 <section id="welcome" class="container">
 	<h1>Herzlich Willkommen</h1>
 	<p>Liebe*r Studienteilnehmer*in,<br>
-	danke, dass Sie an meiner Studie teilnehmen.Im Rahmen meiner Masterarbeit möchte ich untersuchen, wie Sie über Lernen denken. Im Folgenden bitte ich Sie drei Fragen zu Ihrer Person zu beantworten. Daran anschließend werden Ihnen 10 Zeichnungen präsentiert, die zeigen, was verschiedene Personen über Lernen denken. Bitte bringen Sie die Zeichnungen in Ihre persönliche Rangfolge, um zu zeigen, welche Zeichnung am meisten das widerspiegelt, was Sie unter Lernen verstehen.</p>
+	danke, dass Sie an meiner Studie teilnehmen. Im Rahmen meiner Masterarbeit möchte ich untersuchen, wie Sie über Lernen denken. Im Folgenden bitte ich Sie drei Fragen zu Ihrer Person zu beantworten. Daran anschließend werden Ihnen 10 Zeichnungen präsentiert, die zeigen, was verschiedene Personen über Lernen denken. Bitte bringen Sie die Zeichnungen in Ihre persönliche Rangfolge, um zu zeigen, welche Zeichnung am meisten das widerspiegelt, was Sie unter Lernen verstehen.</p>
 
 </section>
 
@@ -25,43 +25,61 @@
 	
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-gender" type="radio" style="zoom:1.2" name="gender" id="gender-male" value="male">
+	    <input class="form-check-gender" type="radio" style="zoom:1.4" name="gender" id="gender-male" value="male">
 	    Männlich
 	  </label>
 	</div>
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-gender" type="radio" style="zoom:1.2" name="gender" id="gender-female" value="female">
+	    <input class="form-check-gender" type="radio" style="zoom:1.4" name="gender" id="gender-female" value="female">
 	    Weiblich
 	  </label>
 	</div>
 </section>
 
-<section id="job" class="container">
-	<h2>Berufliche Situation?</h2>
+</section>
+
+<section id="age" class="container">
+
+	<h2>Ihr Alter?</h2>
 	
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-educationed-level" type="radio" style="zoom:1.2" name="job" id="job-school-student" value="school-student">
-	    Schüler
+	    <input type="number">
+	  </label>
+	</div>
+</section>
+
+<section id="job" class="container">
+	<h2>Ihre berufliche Situation?</h2>
+	
+	<div class="form-check">
+	  <label class="form-check-label">
+	    <input class="form-check-educationed-level" type="radio" style="zoom:1.4" name="job" id="job-school-student" value="school-student">
+	    SchülerIn
 	  </label>
 	</div>
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-education" type="radio" style="zoom:1.2" name="job" id="job-university-student" value="university-student">
-	    Student
+	    <input class="form-check-education" type="radio" style="zoom:1.4" name="job" id="job-university-student" value="university-student">
+	    StudentIn
 	  </label>
 	</div>
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-education" type="radio" style="zoom:1.2" name="job" id="job-employed" value="employed">
+	    <input class="form-check-education" type="radio" style="zoom:1.4" name="job" id="job-employed" value="employed">
 	    Berufstätig – angestellt
 	  </label>
 	</div>
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-education" type="radio" style="zoom:1.2" name="job" id="job-independent" value="independent">
+	    <input class="form-check-education" type="radio" style="zoom:1.4" name="job" id="job-independent" value="independent">
 	    Berufstätig – selbstständig
+	  </label>
+	  <div class="form-check">
+	  <label class="form-check-label">
+	    <input class="form-check-educationed-level" type="radio" style="zoom:1.4" name="job" id="job-school-student" value="school-student">
+	    Berufstätig - LehrerIn
 	  </label>
 	</div>
 </section>
@@ -71,37 +89,37 @@
 	
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-ed-level" type="radio" style="zoom:1.2" name="ed-level" id="school" value="school">
+	    <input class="form-check-ed-level" type="radio" style="zoom:1.4" name="ed-level" id="school" value="school">
 	    Noch keinen, ich bin noch auf der Schule
 	  </label>
 	</div>
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-ed-level" type="radio" style="zoom:1.2" name="ed-level" id="ed-hauptschule" value="hauptschule">
+	    <input class="form-check-ed-level" type="radio" style="zoom:1.4" name="ed-level" id="ed-hauptschule" value="hauptschule">
 	    Haupt-/ Volksschulabschluss
 	  </label>
 	</div>
 	<div class="form-check">
 	  <label class="form-check-labed">
-	    <input class="form-check-ed-level" type="radio" style="zoom:1.2" name="ed-level" id="ed-mittlere-reife" value="mittlere-reife">
+	    <input class="form-check-ed-level" type="radio" style="zoom:1.4" name="ed-level" id="ed-mittlere-reife" value="mittlere-reife">
 	    Mittlere Reife
 	  </label>
 	</div>
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-ed-level" type="radio" style="zoom:1.2" name="ed-level" id="ed-fachhochschulreife" value="fachhochschulreife">
+	    <input class="form-check-ed-level" type="radio" style="zoom:1.4" name="ed-level" id="ed-fachhochschulreife" value="fachhochschulreife">
 	    Fachhochschulreife
 	  </label>
 	</div>
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-ed-level" type="radio" style="zoom:1.2" name="ed-level" id="ed-abitur" value="abitur">
+	    <input class="form-check-ed-level" type="radio" style="zoom:1.4" name="ed-level" id="ed-abitur" value="abitur">
 	    Abitur
 	  </label>
 	</div>
 	<div class="form-check">
 	  <label class="form-check-label">
-	    <input class="form-check-ed-level" type="radio" style="zoom:1.2" name="ed-level" id="ed-hochschule" value="hochschule">
+	    <input class="form-check-ed-level" type="radio" style="zoom:1.4" name="ed-level" id="ed-hochschule" value="hochschule">
 	    Hochschule / Universität
 	  </label>
 	</div>
@@ -109,7 +127,7 @@
 
 
 <section id="dragdrop" class="container">
-	<h2>Ordnen Sie bitte folgende Bilder Ihrer Reihenfolge an</h2>
+	<h2>Bitte bringen Sie die Zeichnungen in Ihre persönliche Rangfolge, um zu zeigen, welche Zeichnung am meisten das widerspiegelt, was Sie unter Lernen verstehen.</h2>
 	<div class="row" id="dragable">
 		<div class="col-xs-2 image-container">
 			<img src="img/formung.jpg" alt="" id="formung" class="image">

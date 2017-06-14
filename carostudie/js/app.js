@@ -1,3 +1,13 @@
+
+function disableScroll() {
+    if (window.addEventListener) // older FF
+    window.addEventListener('DOMMouseScroll', preventDefault, false);
+    window.onwheel = preventDefault; // modern standard
+    window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+    window.ontouchmove = preventDefault; // mobile
+    document.onkeydown = preventDefaultForScrollKeys;
+}
+
 // Enable dragging
 dragula([document.getElementById('dragable')]);
 
@@ -38,6 +48,8 @@ if (localStorage.getItem('results') === null) {
 
 // User clicks image
 $('a').click(function() {
+
+
     // Get data from forms and divs
     var gender = $('.form-check-gender:checked').val();
     var job = $('.form-check-education:checked').val();
@@ -96,6 +108,7 @@ $('.image-container').mousedown(function() {
 
 // Show overlay when user changes the image
 $('.image-container').touchstart(function() {
+    disableScroll();
     higlightOverlay();
 });
 
