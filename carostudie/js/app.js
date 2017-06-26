@@ -54,6 +54,7 @@ $('a').click(function() {
     var gender = $('.form-check-gender:checked').val();
     var job = $('.form-check-education:checked').val();
     var edLevel = $('.form-check-ed-level:checked').val();
+    var age = $('#age-input').val();
 
     // Loop over images
     var images = [];
@@ -68,7 +69,7 @@ $('a').click(function() {
     var results = localStorage.getItem('results');
     var oldStorage = JSON.parse(results);
     var res = {'gender': gender, 'job': job, 'edLevel': edLevel, 
-               'date': Date(), 'images': images};
+               'date': Date(), 'images': images, 'age': age};
     console.log(res);
     oldStorage.push(res);
 
@@ -107,10 +108,10 @@ $('.image-container').mousedown(function() {
 });
 
 // Show overlay when user changes the image
-$('.image-container').touchstart(function() {
+/*$('.image-container').touchstart(function() {
     disableScroll();
     higlightOverlay();
-});
+});*/
 
 
 
