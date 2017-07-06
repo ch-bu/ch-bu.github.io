@@ -52,7 +52,7 @@ $('a').click(function() {
 
     // Get data from forms and divs
     var gender = $('.form-check-gender:checked').val();
-    var job = $('.form-check-education:checked').val();
+    var job = $('.form-check-job:checked').val();
     var edLevel = $('.form-check-ed-level:checked').val();
     var age = $('#age-input').val();
 
