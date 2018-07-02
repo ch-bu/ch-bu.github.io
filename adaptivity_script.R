@@ -7,7 +7,7 @@
 
 
 # Packete laden
-library(tidyverse)
+require(tidyverse)
 
 # Daten laden
 adaptivity_data <- read.csv("http://ch-bu.github.io/adaptivity_data.csv", 
@@ -30,34 +30,65 @@ glimpse(adaptivity_data)
 # Oder
 # adaptivity_data
 
-# Get size of training set specific to dataset
-smp_size <- floor(0.65 * nrow(adaptivity_data))
+################################
+# Funktion zur Berechnung der 
+# Akkuratheit der logitischen
+# Funktion
+################################
+get_accuracy <- function(dataset) {
+  # Get size of training set specific to dataset
+  smp_size <- floor(0.65 * nrow(dataset))
+  
+  # Get row ids of training set
+  train_ind <- sample(seq_len(nrow(dataset)), size = smp_size)
+  
+  
+  # Datasets split into training and testing
+  training_set <- dataset[train_ind, ]
+  testing_set <- dataset[-train_ind, ]
+  
+  # Bilde logistisches Regressionsmodell
+  (model <- glm(able ~ correct + prior_knowledge, 
+                family = "binomial",
+                data = training_set))
+  
+  # Berechne Wahrscheinlichkeiten der richtigen
+  # Lösung anhand des Testing Sets
+  (probabilities <- predict(model, 
+                            newdata = testing_set,
+                            type = "response"))
+  
 
-# Get row ids of training set
-train_ind <- sample(seq_len(nrow(adaptivity_data)), size = smp_size)
+  # Treffe hervorsagen der einzelnen Testdaten
+  (predictions <- ifelse(probabilities > .8, "TRUE", "FALSE"))
+  
+  # Zeige die Tabelle der Hervorsgaen an
+  (results <- table(predictions, testing_set$able))
+  
+  # Fall die Tabelle zu klein ist, gebe NA zurück
+  if (nrow(results) < 2) {
+    accuracy <- results[1, 1] / sum(results)
+  } else if (ncol(results) < 2) {
+    accuracy <- results[1, 1] / sum(results)
+  } else {
+    accuracy <- (results[1, 1] + results[2, 2]) / sum(results)
+  } 
+
+  # Return
+  accuracy
+}
+
+get_accuracy(adaptivity_data)
 
 
-# Datasets split into training and testing
-training_set <- adaptivity_data[train_ind, ]
-testing_set <- adaptivity_data[-train_ind, ]
+# Bootstraping
+# Wiederhole das gleiche Prozedere 100 mal
+bootstrapped_accuracies <- 1:100 %>% 
+  map_dbl(~ get_accuracy(adaptivity_data))
 
-# Bilde logistisches Regressionsmodell
-(model <- glm(able ~ correct + prior_knowledge, 
-              family = "binomial",
-              data = training_set))
+# Show histogram of bootstrapped accuracies
+hist(bootstrapped_accuracies)
 
-# Berechne Wahrscheinlichkeiten der richtigen
-# Lösung anhand des Testing Sets
-(probabilities <- predict(model, 
-                          new_data = testing_set,
-                          type = "response"))
-
-# Treffe hervorsagen der einzelnen Testdaten
-predictions <- ifelse(probabilities > .8, "TRUE", "FALSE")
-
-# Berechne die Akkuratheit des Modells
-(results <- table(predictions, adaptivity_data$able))
-
-# Berechne die Akkuratheit des Modells
-(results[1, 1] + results[2, 2]) / sum(results)
+# Bekomme durchschnittlichen Adaptivitätswert
+mean(bootstrapped_accuracies, na.rm = TRUE)
 
