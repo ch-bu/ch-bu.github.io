@@ -1,8 +1,19 @@
 id,correct,prior_knowledge,able
-derfalke,0.8,8,TRUE
-johnny,0.3,2,FALSE
-micheangelo,0.7,9,TRUE
-delpiero,0.4,7,FALSE
-,0.9,7,TRUE
-,0.6,6,FALSE
-,0.5,5,FALSE
+peterpan,0.83,6,TRUE
+abc,0.83,6,FALSE
+a,0.83,3,TRUE
+Haha,0.5,5,FALSE
+countrygirl,0.83,7,FALSE
+karate kid ,0.33,4,FALSE
+marypoppins,0.83,6,FALSE
+ann18,0.66,4,FALSE
+quint,0.83,9,TRUE
+ernie,0.83,7,TRUE
+lalilu,0.83,5,FALSE
+b,0.83,8,TRUE
+Papa,0.83,9,TRUE
+Christina,0.67,3,FALSE
+Sina,1,9,TRUE
+akra,0.83,6,TRUE
+Анаили,0.33,0,FALSE 
+Blabla,0.66,1,FALSE
