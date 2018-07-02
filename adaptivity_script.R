@@ -10,15 +10,25 @@
 library(tidyverse)
 
 # Daten laden
-adaptivity_data <- read.csv("http://ch-bu.github.io/adaptivity_data.csv", sep = ",") %>%
+adaptivity_data <- read.csv("http://ch-bu.github.io/adaptivity_data.csv", 
+                            sep = ",") %>%
   mutate(
     able = factor(able),
-    z_correct = score(correct),
-    z_prior_knowledge = score(prior_knowledge)
+    z_correct = scale(correct),
+    z_prior_knowledge = scale(prior_knowledge)
   )
+
+# Falls ihr tidyverse nicht installiert habt:
+# adaptivity_data <- read.csv("http://ch-bu.github.io/adaptivity_data.csv", 
+#                             sep = ",")
+# adaptivity_data$able <- factor(adaptivity_data$able)
+# adaptivity_data$z_correct <- scale(adaptivity_data$correct)
+# adaptivity_data$z_prior_knowledge <- scale(adaptivity_data$prior_knowledge)
 
 # Kurzer Blick auf den Datensatz
 glimpse(adaptivity_data)
+# Oder
+# adaptivity_data
 
 # Get size of training set specific to dataset
 smp_size <- floor(0.65 * nrow(adaptivity_data))

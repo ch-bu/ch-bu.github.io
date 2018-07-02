@@ -1,5 +1,8 @@
-correct,prior_knowledge,able
-0.8,8,TRUE
-0.3,2,FALSE
-0.7,9,TRUE
-0.4,7,FALSE
+id,correct,prior_knowledge,able
+derfalke,0.8,8,TRUE
+johnny,0.3,2,FALSE
+micheangelo,0.7,9,TRUE
+delpiero,0.4,7,FALSE
+,0.9,7,TRUE
+,0.6,6,FALSE
+,0.5,5,FALSE
