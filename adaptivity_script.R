@@ -37,7 +37,7 @@ glimpse(adaptivity_data)
 smp_size <- floor(0.65 * nrow(adaptivity_data))
 
 # Get row ids of training set
-train_ind <- sample(seq_len(nrow(adaptivity_data)), size = smp_size)
+train_ind <- base::sample(seq_len(nrow(adaptivity_data)), size = smp_size)
 
 
 # Datasets split into training and testing
